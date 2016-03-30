@@ -1,33 +1,54 @@
+Find this class online at: https://goo.gl/NTISVQ
+
 # Welcome To the Java Crash Course at The Iron Yard!
 
 > a journey of a thousand miles begins with a single step
 > - the Tao Te Ching 
 
+<!-- note: let me ask you a question... -->
+
 **Question:** How do you get to San Francisco from here? 
+
+<!-- note: use a gps? -->
 
 Perhaps you plug San Fran into your GPS, get on the road, and do what the GPS tells you to?
 
-<!-- note: there is no GPS for programing. And you don't learn anything with GPS. -->
+<!-- note: there is no GPS for programing. -->
 
 **Question:** What if you don't have a GPS?
 
+<!-- note: use a map? -->
+
 Maybe we could use a map? Pick out a route, get on the road, and watch the signs.
 
-<!-- note: You drive, but you use the map as guidance. A route can be suggested by the map. This is the iron yard 12 week classes. -->
+<!-- note: Use the map to guide you. This is the iron yard 12 week classes. -->
 
 **Question:** What if you don't have a map? 
 
+<!-- note: no map? -->
+
 Hopefully you can find someone who will point you west. You can ask for directions as go along.
 
-<!-- note: this crash course is you being pointed west. good-luck! -->
+<!-- note: Get pointed west. Ask for directions. -->
 
 ## What you will learn
 
+<!-- note: I'll point you west -->
+
 I intend to give you enough information in this crash course that you can, at least, head westward.
+
+<!-- note: To program is to "speak" a language the computer understands. -->
 
 To write a program is to "speak" in a language a computer can understand. We don't actually "speak" to a computer, but we can write  messages that it can understand. These words aren't in a natural language, though. Instead, they're in a "programming language". 
 
+<!-- note: I'll introduce you to Java -->
+<!-- note: Just enough to get started -->
+<!-- note: One of hundreds of languages -->
+<!-- note: Most popular language -->
+
 This class is about the programming language called Java. Java is just one of _hundreds_ of programming languages, but it has the distinction of being the most popular.
+
+<!-- note: java can look like gibberish -->
 
 To a fresh eye, programming languages often look like gibberish. For example:
 
@@ -36,9 +57,16 @@ int total = scores.stream().mapToInt(Scoreable::getScore).sum();
 return total / scores.size();
 ```
 
+<!-- note: what the heck does this mean?! -->
+<!-- note: java isn't english -->
+
 This could be translated into english as something like, "Give me the average of a set of scores." This example is intentionally obtuse, but only to illustrate a point: Java isn't english. 
 
+<!-- note: java isn't english -->
+
 In this class we'll cover just enough that you can see what direction to head in as you learn Java. This is just the first step in your journey.
+
+<!-- note: first step in a long journey -->
 
 ## A different way of thinking
 
@@ -46,9 +74,13 @@ Computers are fast, literal, and dumb.
 
 Humans are slow and ambiguous, but smart.
 
+<!-- note: humans can figure things out -->
+
 You can tell a human to make you some toast and be fairly certain you'll get something that looks like this:
 
 ![toast-on-a-plate.jpg](https://tiy-learn-content.s3.amazonaws.com/49e91d04-toast-on-a-plate.jpg)
+
+<!-- note: computers have to be told everything  -->
 
 But you can't just ask a computer for, well, anything. You need to be painfully explicit about Every. Single. Step. 
 
@@ -56,39 +88,51 @@ But you can't just ask a computer for, well, anything. You need to be painfully 
 
 This is what happens when you ambiguously ask a computer for toast. 
 
+<!-- note: you must be extremely specific  -->
+
 <!-- todo: toaster exercise? IE, have the class tell me how to make toast and screw it up however I can? -->
-
-## How to get the most out of this course
-
-There are a lot of different ways to learn to program, but hopefully you're here because you want a hands-on, challenging, and effective method to learn the basics. 
-
-Here are a few *strongly encouraged* practices that you can use to get the most out of this course.
-
-1. **Answer the questions out loud:** when a lesson asks a question, pause for a moment and actually answer the question. For best results, say it aloud! There is evidence that answering questions, even wrongly, primes your brain to remember and retain information[1].
-
-2. **Do all of the exercises:** Make sure that you actually take the time to do the exercises. Humans aren't very good at just absorbing abstract concepts through reading; they need to visualize, feel, and get practical. You can't learn to program just by reading.
-
-3. **Play with the code:** There will be quite a few examples of Java code in this course. There is evidence that positive emotion increases comprehension and retention, so make changes. Change the examples to something that makes you laugh. See what happens when you add, remove, or change things. Try to engage with the code in a way that is fun, whatever that means for you.
-
-<!-- todo: tell them to ask questions too-->
 
 ## Getting started
 
+<!-- note: programmers use IDEs to write code -->
+<!-- note: the provide many tools -->
+
 Programmers use a tool to write code called an Integrated Development Environment. IDEs provide a plethora of tools to make programming easier. I use one called [IntelliJ IDEA](https://www.jetbrains.com/idea/), which I highly recommend. There are many others of varying quality. Another one that is well respected is [Eclipse](http://www.eclipse.org/). 
+
+<!-- note: I use intelliJ -->
 
 For this class you will be use a super-basic editor called [compilejava.net](https://www.compilejava.net/). This isn't an IDE, but it is a tool that we can use to experiment with basic Java code.
 
+<!-- note: this class will use compilejava.net -->
+<!-- note: not and IDE, but easy to play with -->
+
 # What is Java anyhow?
+
+<!-- note: this is a big question -->
 
 We should probably delve into what exactly Java is. However, this isn't a simple question and could quite quickly lead us down the proverbial rabbit hole. Instead, I'd like to hit on some major points, but leave the rest for you to learn as you move forward.
 
+<!-- note: I'll touch on some major points -->
+
 ## Java is a programming language
+
+<!-- note: we understand english -->
+<!-- note: english has syntax -->
+<!-- note: subject verb noun -->
 
 In English we know that we start sentences with capitol letters and end them with periods, question marks, or exclamation points. We know the basic sentence structure of "subject verb noun". Sentences can be collected together to communicate complex messages. This is the _syntax_ of English. All human languages have their own syntax.
 
+<!-- note: programming languages have syntax -->
+<!-- note: very strict -->
+<!-- note: if syntax isn't perfect, the program won't run -->
+
 All programming languages also have their own syntax. Java code is written in Java's syntax. Unlike spoken languages, a programming language's rules are _very_ strict. In English, a missing comma isn't the end of the world. You can usually figure out what the writer is trying to say. In Java, a missing semicolon results in a program that won't run at all. Computers don't have intuition.
 
+<!-- note: computers don't have intuition -->
+
 The programming language Java is the syntax you use to tell the computer what to do.
+
+<!-- note: the language java has its own syntax -->
 
 ```java
 public class HelloWorld {
@@ -100,23 +144,46 @@ public class HelloWorld {
 }
 ```
 
+<!-- note: type the code above -->
+
 For now, don't worry about what this code does, just type it into compilejava.net as it is and hit the "Compile & Execute" button.
+
+<!-- note: just Compile & Execute -->
 
 ## The Java compiler
 
+<!-- note: computers only speak binary. ones and zeros -->
+<!-- note: humans don't speak binary -->
+
 Computers only speak one language: Binary. Ones and zeros. That's it. A CPU receives instructions in binary and it does exactly what the instructions tell it to do. Unfortunately, humans don't speak binary.
 
-Back in the dark ages of programming, programmers created mnemonics, known as _assembly code_, to help learn this binary language. A programmer would write assembly code and later _manually_ translate it to binary using a lookup table.
+
+<!-- note: programmers used to use mnemonics to write binary -->
+<!-- note: assembly code -->
+
+Back in the dark ages of programming, programmers created mnemonics, known as _assembly code_, to help write this binary language. A programmer would write assembly code and later _manually_ translate it to binary using a lookup table.
+
+<!-- note: assembly code was manually translated to binary -->
 
 ![Example assembly and binary instructions](https://tiy-learn-content.s3.amazonaws.com/aeef70ab-example%20assembly%20and%20binary%20instructions.png)
 
+<!-- note: programmers automated this translation -->
+<!-- note: first compilers -->
+
 No mere mortal wants manually translate assembly code to binary. Good programmers are often lazy, and so eventually programs were created to automatically translate assembly code into binary instructions. These were the first _compilers_.
 
+<!-- note: compilers translate source code into binary -->
+
 A compiler takes source code written in a programming language and translates it into binary instructions a CPU can understand.
+
+<!-- note: compilers translate source code into binary -->
 
 Over time, compilers mature and add features that take us away from the world of assembly to the world of modern programming languages.
 
 The Java compiler is, well, a compiler. (Surprise!) It takes code you write in the Java language and translates that into something your computer can understand.
+
+<!-- note: java is also a compiler that turns java into something the computer can understand -->
+<!-- note: .java compiled to .class -->
 
 Java files are (usually) written in files that have a `.java` extension. The compiled files have a `.class` extension.
 
@@ -124,25 +191,52 @@ Java files are (usually) written in files that have a `.java` extension. The com
 
 ## The Java Runtime Environment
 
+<!-- note: java isn't compiled for a specific computer -->
+<!-- note: we need a "runtime" -->
+
 Java is not compiled for a specific computer. We can't just execute it like any other program. Instead, we need a _Java Runtime Environment_. This is the "Java" that your computer is constantly bugging you to update.
+
+<!-- note: This is what your computer is always telling you to upgrade -->
+
+![java update available.png](https://tiy-learn-content.s3.amazonaws.com/221f36d2-java%20update%20available.png)
+
+<!-- note: jre is a "virtual" computer -->
+<!-- note: simulates a CPU, memory, hard drive, etc -->
 
 The JRE is actually a virtual computer. It simulates the CPU and hardware of a real computer. The JRE takes the compiled Java code and executes.
 
+<!-- note: jre hides specifics computer from the programmer -->
+<!-- note: allows java programs to run almost anywhere -->
+
 The JRE effectively hides from the programmer everything that makes a particular computer unique. Java programers don't need to know how to read files on Windows, Mac, Unix, and your set-top cable box. The JRE already does.
+
+<!-- note: windows, mac, unix, linux, cable set-top box, mobile phone -->
+<!-- note: makes life easier -->
 
 This process of hiding implementation details is called _abstraction_. 
 
 ## The Java Development Kit
 
+<!-- note: JDK provides all of the above -->
+<!-- note: it's what we need to write Java programs -->
+<!-- note: provides javac -->
+
 The Java Development Kit is key to all of the above. It provides everything we need to make Java applications. In particular, the JDK provides the `javac` command we use to compile Java code.
 
+<!-- note: also includes JRE -->
+<!-- note: provides java command -->
+
 The JDK also includes the JRE, which provides the `java` command we use to execute our Java bytecode. Many other useful tools are included for debugging, analyzing code, and packaging applications for distribution.
+
+<!-- note: many other tools for programmers -->
 
 # The Basics
 
 In this section we're going to discuss most basic syntax of the Java programming language.
 
 ## Boilerplate
+
+<!-- note: all classes must have a specific structure -->
 
 All Java files must follow a specific structure. This is the _syntax_ of Java. At an absolute minimum a Java file must contain this:
 
@@ -151,6 +245,9 @@ class Example {}
 ```
 
 <!-- demo: create this in compilejava.net -->
+
+<!-- note: this compiles but doesn't run -->
+<!-- note: need to add more boilerplate code -->
 
 This code compiles, but can't be executed yet. To do this we need to add more boilerplate code.
 
@@ -168,31 +265,57 @@ This, you can actually run!
 
 <!-- demo: demo this -->
 
+<!-- note: what does this code mean? -->
+<!-- note: don't worry about it -->
+<!-- note: chicken and egg -->
+
 You may be wondering what all this code means. Don't worry about it. You have to understand a bit of Java before you'll be able to really understand this... Java. It's a bit of a chicken or egg problem.
 
 Here's what I _do_ want you to understand:
 
+<!-- note: this is a "class" named Example -->
+
 This chunk of code is called a _class_. Do you see the word `Example`? This tells us this class is called `Example`. Don't worry about what a class is yet.
+
+<!-- note: we have a "main method" (don't worry about what this is yet) -->
 
 Do you see the word `main`? `main` is preceded by and followed by gibberish. Let's not worry about the gibberish at this point. All you need to know is that this denotes something called the _main method_.
 
+<!-- note: focus on what's in the curly braces -->
+<!-- note: main method "body" -->
+
 Everything between the first `{` curly brace after the `main` keyword to the subsequent `}` curly brace is called the method *body*.
+
+<!-- note: main method is the starting point -->
+<!-- note: all java apps have a main method somewhere -->
 
 Ultimately, every Java application has a main method somewhere. This is the starting point for any Java application. It's what Java executes first when you run your program. For now, let's only focus on the `main` method's body. 
 
 This is the body of the `main` method in our `Example` file:
 
+<!-- note: this is our body: -->
+
 ```java
 System.out.println("Hello World!");
 ```
+
+<!-- note: this is where we'll put code for now -->
 
 While we're getting started, this is where we will put our code. 
 
 ## Comments
 
+<!-- note: code can be inscrutable -->
+<!-- note: it might make sense to a computer but maybe not a person -->
+
 Source code can be inscrutable. Understanding _your own_ code can be challenging, much less someone else's. While your program might make sense to a computer, humans are the ones who have to write and maintain that code. It's essential that we communicate to ourselves and other what exactly we are trying to accomplish. 
 
+<!-- note: comments are ignored by java -->
+
 _Comments_ denote lines or blocks of text the compiler completely ignores. These are how you leave helpful messages to yourself or others in your source code. 
+
+<!-- note: can remove code -->
+<!-- note: can describe code -->
 
 You can also use comments to _comment out_ chunks of code you don't want to use, but don't want to delete either. 
 
@@ -200,8 +323,9 @@ You can also use comments to _comment out_ chunks of code you don't want to use,
 
 **Syntax:** `//<your comment>`
 
-Line comments are used to add a comment to a single line of source code. As soon as Java sees `//` it will stop processing anything until the end of that line of text.
+<!-- note: line comments stop processing until the end of the line -->
 
+Line comments are used to add a comment to a single line of source code. As soon as Java sees `//` it will stop processing anything until the end of that line of text.
 
 ```java
 public class Example {
@@ -222,7 +346,11 @@ public class Example {
 
 **Syntax:** `/*<your comment>*/`
 
+<!-- note: block comments stop processing between start and end -->
+
 Block comments are used to add comments that stretch across multiple lines of code. As soon as Java sees `/*` it will stop processing anything until it finds `*/`.
+
+<!-- note: a haiku! -->
 
 ```java
 public class Example {
@@ -247,9 +375,15 @@ public class Example {
 
 ## Semicolons
 
+<!-- note: semicolons are very important in java! -->
+<!-- note: they're like periods in english -->
+<!-- note: the tell java when we've reached the end of a thought -->
+
 Semicolons are extremely important in Java. Every _statement_ must end with a semicolon. A statement is generally a single line of code inside a _block_ of code like the `main` method. The semicolon tells Java that it has reached the end of an statement. 
 
 This code won't compile because the statements inside the main method's body aren't terminated with semicolons:
+
+<!-- note: this won't compile; missing a semicolon -->
 
 ```java
 public class Example {
@@ -272,6 +406,8 @@ public class Example {
     }
 }
 ```
+
+<!-- note: semicolons can be a pain for new programmers. -->
 
 Semicolons may seem like a small detail, but it is a **huge** issue. One of the most common problems <span style="text-decoration:line-through;">new</span> programmers have is forgetting semicolons. 
 
