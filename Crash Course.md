@@ -1388,8 +1388,8 @@ Logical operators return boolean true or false values. We can use these to contr
 
 **Returns:** True if both boolean values provided are true, otherwise false.
 
-<!-- note: you will often need to make decisions -->
-<!-- note: nasa only launches if: <br/>wind speed is below 42<br/>sky is clear -->
+<!-- note: requires both values to be true -->
+<!-- note: nasa only launches if: ** wind speed is below 42 ** sky is clear -->
 
 In programming you will often want to make decisions based on one or more conditions. For example, among other criteria, [NASA will only launch a rocket if](http://www.nasa.gov/centers/kennedy/news/releases/2003/release-20030128.html) the wind speed is below 42 knots and the sky is clear. This can be expressed using the logical and operator.
 
@@ -1410,7 +1410,11 @@ public class Example {
 }
 ```
 
+<!-- demo: we are clear for launch because the windspeed is ok and the sky is clear -->
+
 In this example we determine that we are go for launch because the wind speed is below the allowed threshold and the sky is clear.
+
+<!-- note: if these aren't both true we're not go for launch -->
 
 However, if the wind speed is too high, the sky isn't clear, or both, then the `goForLaunch` would be false.
 
@@ -1421,6 +1425,8 @@ However, if the wind speed is too high, the sky isn't clear, or both, then the `
 **Syntax:** `<a boolean value> || <another boolean value>`
 
 **Returns:** True if either or both boolean values are true, false if both values are false.
+
+<!-- note: requires one value to be true -->
 
 The logical or operator is similar to the "and" operator, but is only false if both operands are false.
 
@@ -1447,6 +1453,9 @@ public class Example {
 
 **Returns:** The opposite of the boolean value provided.
 
+<!-- note: negates what comes next. -->
+<!-- note: just like "not" in english -->
+
 In English the word "not" negates what comes next. The not operator in Java does the same thing. Essentially you can make something not-true or not-false using the `!` operator.
 
 ```java
@@ -1463,19 +1472,39 @@ public class Example {
 }
 ```
 
+<!-- note: sometimes called "bang". but not by me -->
+
 ## Other Operators
+
+<!-- note: there are other operators you can use too. -->
+<!-- note: we're not covering them -->
 
 There are a number of other operators we haven't covered because they're not important at this point. You can [read more on Java operators here](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html).
 
 # Conditionals
 
+<!-- note: (more or less) software starts at line one and runs until done -->
+<!-- note: kinda like a script: romeo talks, juliette talks, everyone dies -->
+
 Essentially, all software begins executing on the first line and continues until it reaches the last line. It's sort of like the script for a play: Romeo says something, Juliette says something, they both die, end of story. 
 
-Actually, it's a bit more complex than that. It's more like one of those interactive dinner theaters. There's one script, but it branches depending on who the audience decides the murderer is.
+<!-- note: more complex than that -->
+<!-- note: it's like an audience participation theater -->
+<!-- note: or choose your own adventure story -->
+
+Actually, it's a bit more complex than that. It's more like one of those interactive dinner theaters. There's one script, but it branches depending on who audience input.
+
+<!-- note: conditional expressions control flow of app-->
+
+In programming, we use conditional logic to control this flow. Conditions are criteria that must be met for a block of code to be executed. 
 
 I think of conditionals like a series of dams on a river. They control and redirect the flow of the river.
 
-In programming, we use conditional logic to control this flow. Conditions are criteria that must be met for a block of code to be executed. For example:
+<!-- note: dams on a river can redirect flow -->
+
+For example:
+
+<!-- note: discuss these examples -->
 
 * Did the user push the jump button? 
 	* If so: Then make the character jump.
@@ -1499,7 +1528,11 @@ if(<conditional expression that evaluates to true>){
 }
 ```
 
+<!-- note: an if expression executes a block of code if the conditional expression evaluates to true -->
+
 An `if` statement executes a _block_ of code only if a conditional expression evaluates to true. Blocks of code are the lines of code between curly braces.
+
+<!-- note: depends on logical operators -->
 
 Remember the logical operators we just discussed? This is where they really come into play. For example:
 
@@ -1540,7 +1573,11 @@ if(<conditional expression that evaluates to true>){
 }
 ```
 
+<!-- note: "else" is used when we want to do something when our conditional expression is not true -->
+
 Sometimes you want to do one thing or something else. Maybe you want steak or chicken. Usually you don't want both. 
+
+<!-- note: "else" is tacked onto the end of an if statement -->
 
 An `else` statement can be tacked onto the end of an if statement. The block of code enclosed in the curly braces after the `else` statement are only executed if the original conditional statement is false.
 
@@ -1584,7 +1621,11 @@ if(<conditional expression that evaluates to true>){
 }
 ```
 
+<!-- note: "else if" is used to make decisions based on more than one conditional -->
+
 Often you will want to make decisions based on more than only one conditional statement. In this case you can use _else if_ statements. 
+
+<!-- note: only the first if statement to evaluate to true executes. -->
 
 Java will evaluate the first `if` statement. If that's false, it will check the next `else if` statement. If that's false, it will continue checking `else if` statements until one evaluates to `true`. If none of them evaluate to `true` the else `block` (if provided) will be executed, if provided. Only one block of code in the entire statement can be executed. 
 
@@ -1629,13 +1670,21 @@ public class Example {
 }
 ```
 
+<!-- note: if we reorder the if / else if above it won't work right -->
+
 Take particular note of the order of the `if` and `else-if` statements. If we put the latte conditional first we would never reach the mocha conditional. This is because a mocha is just a latte, but with chocolate. 
 
 Be sure to carefully consider what order your `if`, `else if`, and `else` blocks are written.
 
 # Loops
 
+<!-- note: computers are good at repetitive tasks -->
+<!-- note: people are bad at repetitive tasks -->
+
 Computers were invented to do repetitive tasks, something humans are really bad at. Have you ever lost count of something? Have you forgotten your place in a long list? Java won't do that.
+
+<!-- note: loops are how we do things repeatedly in java -->
+<!-- note: we can loop over a range of values -->
 
 There are a few ways to loop over data in Java. We'll touch on three of them here.
 
@@ -1648,6 +1697,10 @@ for(<initializing expression> ; <conditional expression> ; <afterthought express
 	<body to loop over>
 }
 ```
+
+<!-- note: for loops seem complicated but aren't that bad -->
+<!-- note: usually used to tell Java to loop from one value to another. (1 to 10) -->
+<!-- note: On each step run the code in the body -->
 
 `For` loops seem complicated on the surface, but they're actually pretty simple. Typically, what we're telling Java is that we're going to loop from one value, to another value, stepping incrementally through each iteration through the loop.
 
@@ -1665,6 +1718,8 @@ public class Example {
 }
 ```
 
+<!-- note: Let's break this down -->
+
 We'll focus in on the first line of code first. The `for` keyword simply tells Java that this is a `for` loop. Inside the parenthesis we have three  distinct expressions separated by semicolons. 
 
 * **Initializing expression:** `int x = 0`
@@ -1677,6 +1732,8 @@ We'll focus in on the first line of code first. The `for` keyword simply tells J
 	Increment `x` by after each iteration trough the loop.
 
 Putting this together, our example loop follows this flow:
+
+<!-- note: use the debugger in IntelliJ to step through this -->
 
 1. **Initialization:** Define a variable named `x` and set its value to `0`.
 
@@ -1718,6 +1775,9 @@ while(<conditional expression>){
 }
 ```
 
+<!-- note: while loops loop while a conditional is true -->
+<!-- note: similar to for loops, but no initialization or afterthought expressions -->
+
 `While` loops are similar to `for` loops, but they only have a single conditional expression. The conditional expression in a `while` loop is executed before each execution of the body. 
 
 Here's an example `while` loop that does the same thing as the `for` loop above:
@@ -1736,9 +1796,13 @@ public class Example {
 }
 ```
 
+<!-- note: we defined our own control variable anyhow. -->
+
 Note that in this example we defined our own variable that is an equivalent to the initializing variable in the `for` loop example. We also increment it at the end of the `while` loop's body, just like we did in the afterthought expression in the `for` loop. We don't _need_ to do this, per se, all we need is the conditional expression after the `while` keyword.
 
 Abbreviated, our logic looks like this:
+
+<!-- note: use intelliJ debugger to demo -->
 
 1. Is `x` less than or equal to 10? Yes
 2. Output `x` and increment it to 1.
@@ -1755,7 +1819,11 @@ Abbreviated, our logic looks like this:
 
 And, we're done with our loop.
 
+<!-- note: conditional is evaluated before and after each iteration. -->
+
 You should note that the conditional expression is evaluated before and after each iteration through the loop.
+
+<!-- note: generally less common than for -->
 
 In general `while` loops are a lot less common than `for` loops.
 
@@ -1768,6 +1836,10 @@ do{
 	<body to loop over>
 } while(<conditional expression>);
 ```
+
+<!-- note: very similar to the while loop -->
+<!-- note: conditional only evaluated AFTER body -->
+<!-- note: body always executes -->
 
 The `do while` loop is almost identical to the `while` loop, except that the conditional expression is only evaluated at the end of the loop. The body of the loop is always executed at least once. If the conditional expression evaluates to `true` the loop is run again. This continues until the conditional expression evaluates to `false`.
 
@@ -1788,6 +1860,8 @@ public class Example {
 }
 ```
 
+<!-- note: we loop from 0 to 10 as expected -->
+
 One thing to note is that if `x` were any value at all, this expression would always output it once. For example:
 
 ```java
@@ -1805,11 +1879,18 @@ public class Example {
 }
 ```
 
+<!-- note: we don't loop, but 15 is output -->
+
 This will output `15` to the console one time, but will not loop since `15` is greater than `10`.
+
+<!-- note: least common type of loop -->
 
 This is probably the least common form of looping in Java. I don't recommend using it unless you have a good reason.
 
 ## Nested loops
+
+<!-- note: we can nest loops -->
+<!-- note: for each iteration in a loop, the inner loop completely executes -->
 
 The last thing to note about loops - or really any other blocks of code in Java - is that they can be _nested_ within each other. For example, we could output a times table like this:
 
@@ -1838,22 +1919,35 @@ public class Example {
 }
 ```
 
+# Classes and Objects
 
-Classes and Objects
-
-# Classes
+<!-- note: a class is a data type that holds other data  -->
+<!-- note: pretty much all of java is made up of classes -->
 
 A class is a type of data that can hold other types of data. Pretty much everything in Java is made up of classes. 
 
+<!-- note: classes are used to "model" concepts (real and abstract). -->
+<!-- note: classes describe "objects" (remember that word) -->
+
 In programming, we use classes to model real world and abstract concepts. A class can be used to describe a type of _object_, it's properties, and whatever it can do. 
+
+<!-- note: a class is like a blueprint -->
+<!-- note: blueprint's detail how to build a house (room measurements, fixture placement, etc) -->
 
 A class is like a blueprint for a house. A blueprint is a detailed plan for building a house. It shows the placement and measurements of all rooms, where fixtures will be placed, where utilities will be run, how the roof will be assembled, and much, much more. 
 
 ![House_Plans_(Blueprints).jpg](https://tiy-learn-content.s3.amazonaws.com/b9067c2c-House_Plans_%28Blueprints%29.jpg)
 
+<!-- note: an object is like a house you build from a blueprint -->
+<!-- note: you can build many houses from the same blueprint -->
+
 An object is like a house you built using the blueprint. You can make many houses using the same blueprint, but each house is distinct.
 
 ![what a house might look like.jpg](https://tiy-learn-content.s3.amazonaws.com/70364e47-what%20a%20house%20might%20look%20like.jpg)
+
+<!-- note: objects in the real world have properties (height, weight, color, etc). They also have actions they can perform (run, jump, honk, drive, etc) -->
+<!-- note: objects in programming do too -->
+<!-- note: classes describe objects (are a blueprint) -->
 
 Remember our original hello world program?
 
@@ -1865,9 +1959,18 @@ public class Example {
 }
 ```
 
+<!-- note: class is named example -->
+<!-- note: no properties -->
+<!-- note: can do something: the main method -->
+<!-- note: running a method is called invoking -->
+
 In this example we wrote a class named `Example`. The `Example` class doesn't have any properties to describe it, but it does have one method we can use to interact with it, the `main` method. This main method is _invoked_ when we execute the program.
 
+<!-- note: classes are pervasive! -->
+
 Classes are pervasive in Java. The example above uses several classes other than the `Example` class itself.
+
+<!-- note: discuss classes used in hello world example -->
 
 * `String[]` - This is actually two classes, String and Array.
 * `System` - The system class. It has system-specific behaviors and properties.
@@ -1876,13 +1979,26 @@ Classes are pervasive in Java. The example above uses several classes other than
 
 ## Objects
 
+<!-- note: Classes are to blueprints as objects are to houses -->
+
 If a class in Java is a blueprint, then what you build from that blueprint is called an _object_.
+
+<!-- note: the difference can be confusing to new programmers. -->
+<!-- note: don't worry too much about it, it'll come with time. -->
 
 Classes are to blueprints as objects are to houses. This is a topic that often confuses new programmers.
 
+<!-- note: blueprints don't provide shelter -->
+<!-- note: blueprints are metadata (data about data) -->
+
 A blueprint doesn't provide much shelter or storage space; it doesn't _do_ much of anything other than tell us how to build a house. It's essentially _metadata_; data that describes other data.
 
+<!-- note: a house does provide shelter -->
+<!-- note: a house doesn't tell you how to build another house -->
+
 On the other hand, a house _does_ provide shelter and storage space. However, it doesn't tell you how to build another house. 
+
+<!-- note: a class doesn't do the magic bits, objects do -->
 
 A class doesn't do the "magic bits" (not a technical term). You have to use the class to create an object that does do the magic bits.
 
@@ -1890,11 +2006,21 @@ A class doesn't do the "magic bits" (not a technical term). You have to use the 
 
 **Syntax:** `"<some text>"`
 
+<!-- note: remember the char primitive type? -->
+<!-- note: a string is a collection of chars -->
+<!-- note: word, sentence, novel -->
+
 `String` is a class that represents a collection of letters. In english, this is what you use to make bits of text like words, sentences, paragraphs, or the next great american novel. (I don't recommend the latter.)
+
+<!-- note: strings are objects. -->
+<!-- note: The String class describes them -->
+<!-- note: Strings have a special syntax "..." (called string literals) -->
 
 Strings are unique in Java in that they have a _string literal_ syntax. Java automatically recognizes that the characters contained between double quotes represent a `String` object. 
 
 We've already used strings throughout this class:
+
+<!-- note: we've already seen a few strings -->
 
 ```java
 public class Example {
@@ -1904,7 +2030,12 @@ public class Example {
 }
 ```
 
+<!-- note: "hello world" is an instance of a string -->
+<!-- note: creating an instance is called instantiation -->
+
 In this familiar example, `"Hello World!"` is a string. More accurately, `"Hello World!"` is an _instance_ of a string expressed in string literal syntax. The process of creating an instance of a class is called _instantiation_. You instantiate instances of classes. In this case we're instantiating an instance of a string using string literal syntax.
+
+<!-- note: go over the etymology of instantiate -->
 
 The etymology of "instantiate" may be helpful to understand:
 
@@ -1918,34 +2049,36 @@ The etymology of "instantiate" may be helpful to understand:
 
 So, the verb instantiate is the act of having a specified object present. 
 
+<!-- note: the String class describes all String object instances -->
+
 Remember how classes describe objects? The `String` class describes string objects. `"Hello World!"` is an instance of the String class. `"Insert deep thought here..."` would also be an instance of a string. `"This is an instance of a string."` is too.
 
 ## Method invocation
 
 **Syntax:** `<return value> = <instance of an object>.<method name>(<zero or more method arguments>)`. 
 
+<!-- note: there are many properties we could use to describe a string -->
+<!-- note: length, number of words, the position of letters, etc -->
+
 In the real world, a string of text has numerous properties you could use describe it. It has a given number of characters. These characters are in specific positions. A string of text might contain another string of text.
+
+<!-- note: the String class defines many of these properties for us -->
+<!-- note: provides "methods" we can use to interact with those properties -->
+<!-- note: methods are things our objects can do -->
+<!-- note: example: length() gets the number of letters in a string -->
 
 Similarly, Strings in Java have several properties and methods for accessing them. For example, the `String` class has a method `length()` that we can use to get the number of characters in a string. Behind the scenes, the String class is just a chunk of code that some other programmer wrote a long time ago. The String class's `length()` method is just a specific subset of the String class' code. 
 
+<!-- note: calling a method is "invoking" it -->
+
 When we can use the syntax shown above to _invoke_ the String class's `length()` method. When we invoke a method we're telling the String class to execute that specific chunk of code and tell us the results of running that code.
 
-The etymology of invoke may be helpful in understanding this:
-
-* **in-** Latin prefix. 
-	1. Prefixed to certain words to give the senses of in, into, towards, within.
-* **vocare** Italian
-	1. (transitive) to call, name
-
-So, the verb invoke means to call into code within a class.
-
-Oftentimes you hear people refer to _calling_ or _running_ a method. This is just shorthand for invoking. It's perfectly ok to use this language, but I encourage you to be explicit and try to use the word invoke instead.
+<!-- note: let's play with some methods on the string "No pain, no gain". -->
 
 Let's dig into a few methods of the String class by looking at the string "No pain, no gain".
 
 Remember that Java recognizes the string literal "No pain, no gain" and creates an instance of a String object. We could invoke the `length()` method on this instance object as follows.
 
-@todo
 ```java
 public class Example {
     public static void main(String[] args){
@@ -1958,11 +2091,25 @@ public class Example {
 }
 ```
 
-This sample indicates that there are 16 characters in "No pain, no gain", which is correct!
+This sample outputs that there are 16 characters in "No pain, no gain", which is correct!
 
-Take note that the syntax for creating a String variable is the same as creating other types of variable. Once we have our String instance we can invoke methods on the object. We create a new variable of type  `String` and name it `message`. The value of `message` is set by the assignment operator to an instance of the `String` class whose text is `"No pain, no gain"`. 
+<!-- note: review the etymology of invoke -->
 
-On the second line we take our new `String` instance and invoke its `length()` method. You should take note that I used the word "its" to denote that our `String` object (an instance of the String class) has its own `length()` method. 
+The etymology of invoke may be helpful in understanding this:
+
+* **in-** Latin prefix. 
+	1. Prefixed to certain words to give the senses of in, into, towards, within.
+* **vocare** Italian
+	1. (transitive) to call, name
+
+So, the verb invoke means to call into code within a class.
+
+<!-- note: sometimes called "calling" or "running" -->
+
+Oftentimes you hear people refer to _calling_ or _running_ a method. This is just shorthand for invoking. It's perfectly ok to use this language, but I encourage you to be explicit and try to use the word invoke instead.
+
+<!-- note: objects are distinct -->
+<!-- note: two houses don't share the same sink! -->
 
 In the same way that two houses built from the same blueprint don't share a single kitchen sink, each object instantiated from a class gets its own methods. 
 
@@ -1981,7 +2128,12 @@ public class Example {
 }
 ```
 
+<!-- note: demo shows that our two variables are distinct and have different properties -->
+
 This example shows two `String` variables, `noPain` and `lotaPain`. Each of these `String` objects have their own `length()` method. When invoked, these methods return the length of their respective strings.
+
+<!-- note: another method of String is substring(). -->
+<!-- note: used to get a portion of a string -->
 
 Another notable method on the String class is substring(). Unlike the length() method, the substring() method accepts two arguments, beginIndex, and endIndex. These tell the method to find the substring of text starting from the beginIndex and continuing to (but not including) the endIndex. The substring() returns this text as a new String object.
 
@@ -2003,7 +2155,12 @@ public class Example {
 
 **Syntax:** `<new object instance> = new <name of class>(<constructor arguments>)`
 
+<!-- note: the "new" keyword is how we create instances of objects from classes -->
+<!-- note: most objects don't have a literal syntax like String does -->
+
 The `new` keyword is what you use when you're creating a new instance of an object without using literal syntax. Since String is a class, we don't _have_ to use the String literal syntax. We could use the `new` keyword.
+
+<!-- note: we can create an instance of a String with new too -->
 
 ```java
 public class Example {
@@ -2025,6 +2182,10 @@ public class Example {
 }
 ```
 
+<!-- note: let's use a different class, Date -->
+<!-- note: date is deprecated and should't be used. -->
+<!-- note: good for a demo -->
+
 Let's try this with a different class, Date. It should be noted that the Date class is _deprecated_. This means it's slated to be removed from Java in the future and shouldn't be used for new code. But, it's an easy class to use and is good for a demo.
 
 ```java
@@ -2039,15 +2200,31 @@ public class Example {
 }
 ```
 
+<!-- note: the import statement tells our class we're going to use the Date class -->
+<!-- note: java.util. is a package. you can ignore this -->
+
 There's a few new things here that we haven't seen before. At the very top we have `import java.util.Date;`. This tells Java we want to use the `Date` class. Classes in Java are sorted into `packages`. The Date class is in `java.util` package, which we need to specify as a part of the import statement.
+
+<!-- note: right now is of type Date (static typing of variables) -->
 
 In the body of the main method we have `Date rightNow = new Date();`. To the left of the `=` assignment operator we declare a variable named `rightNow` that is of type `Date`. 
 
+<!-- note: "new" tells Java we want a new instance of Date -->
+
 To the right of the assignment operator we have `new Date()`. The keyword `new` tells Java we're instantiating a new object. `Date` tells Java the type (IE: the class) of object we're creating. 
+
+<!-- note: the parens are a constructor. -->
+<!-- note: constructors "build" the object and return it -->
+<!-- note: the constructed object is assigned into the variable -->
 
 The parenthesis tell Java to call a _constructor_ on the new Date object. A constructor is a special method on an object that is called when the object is instantiated. Constructors are defined by the class. A constructor is used to configure an object before it's used. 
 
+<!-- note: our constructor has no arguments yet. -->
+
 In the above example we're calling a constructor that accepts no arguments. This constructor cause the new `Date` object to use the current date and time as its value. The Date class has several constructors, but since they're deprecated they don't work with compilejava.net. 
+
+<!-- note: here's an example with a constructor that takes arguments -->
+<!-- note: this doesn't actually compile on compilejava.net since this constructor is deprecated -->
 
 Here's an example using the deprecated constructor `Date(int year, int month, int date, int hrs, int min)` and another deprecated method, `getYear()` that returns the year from the date.
 
@@ -2104,6 +2281,8 @@ Now that we know what classes are, how to instantiate them, and how to call meth
 }
 ```
 
+<!-- note: cover basic syntax for a class -->
+
 The syntax described above is not exhaustive, but it will do for now. We're going to start out with only the most basic of classes and build up to much more complex classes as we move through our material. The syntax shown above is very minimal and focused on what we care about right now.
 
 You might remember that the very first class we saw this:
@@ -2112,7 +2291,12 @@ You might remember that the very first class we saw this:
 class Example {}
 ```
 
+<!-- note: no access modifier and no body, but it is entirely valid -->
+
 This class has no access modifier and no body, but it is entirely valid. Because there is no access modifier, only classes in the same directory can instantiate this class.
+
+<!-- note: classes should represent a concept -->
+<!-- note: let's model a person -->
 
 Since classes are supposed to represent concepts, let's make a class that models a person. Let's start our person model with the most minimal code required:
 
@@ -2120,11 +2304,18 @@ Since classes are supposed to represent concepts, let's make a class that models
 public class Person {}
 ```
 
+<!-- note: Person is capitalized -->
+
 Note that `Person` is capitalized. It is _convention_ in Java to capitalize class names. Don't be "that person" who doesn't capitalize their class names.
+
+<!-- note: Person is public -->
+<!-- note: other Java code is allowed to instantiate -->
 
 I gave the Person class a `public` access modifier. This access modifier tells Java that other Java code is allowed to instantiate this class.
 
 Let's create another class with a `main` method. We can use this to test our `Person` class as we go along.
+
+<!-- note: Let's instantiate the Person from a main() method -->
 
 ```java
 public class Main {
@@ -2135,6 +2326,8 @@ public class Main {
     }
 }
 ```
+
+<!-- note: println outputs the object's hash code. a unique ID for this instance -->
 
 In this example we're creating a new variable of type `Person`. The variable's name is `doug` and we're assigning a new instance of a `Person` object to that variable. We're also outputting Java's own string representation of the variable to the console. The output looks something like this:
 
@@ -2156,12 +2349,16 @@ public class Main {
 }
 ```
 
+<!-- note: multiple instances are distinct. they have different hash codes -->
+
 Here we have added a second instance of the Person object. Note that the output shows this:
 
 > Person@511d50c0
 > Person@60e53b93
 
 The hash code for these two objects are different because they are different instances of the object. In your computer's memory, these two objects are sitting in different places. 
+
+<!-- note: two variables can reference the same instance of an object -->
 
 We can make two different variables reference the exact same object. 
 
@@ -2184,6 +2381,8 @@ This outputs:
 
 In this case, the hash code is the same because both variables reference the same instance of the Person object. 
 
+<!-- note: go through apple thought exercise: -->
+
 Imagine a person holding an apple. Now, imagine a _different_ person holding another apple.
 
 * How many people are there? Two.
@@ -2200,6 +2399,9 @@ Multiple variables can _point_ to the same object instance.
 
 **Syntax:** `<access modifier> <variable definition>`
 
+<!-- note: let's add some properties to our Person -->
+<!-- note: defined in body between curly braces -->
+
 Properties are variables that belong to a class. This is the data that defines your object. Properties are defined within the curly braces that define a class' body. Typically these are added immediately after the opening curly brace at the very top of the class' body. You can define as many properties as you wish, but they must all have different names.
 
 One property that all real people have is a name. So, let's make our programatic model of a person have a name.
@@ -2212,6 +2414,8 @@ public class Person {
 ```
 
 This code adds a single `String` property named `name` to the `Person` class. Because we set the access modifier to public, any other code can get or set the name of Person objects.
+
+<!-- note: two instances of Person with names -->
 
 ```java
 public class Main {
@@ -2232,6 +2436,8 @@ public class Main {
 In this example we're again creating two different instances of the `People` class and assigning them to the variables `doug` and `liz`. We then set the `name` property for that instance, which is the property we just defined. Take particular note of the `.` "dot" character. This dot tells Java to get the value of the `name` property from the specific `Person` instance in the variable `doug`.
 
 A person is not defined by a single property. I am not just my name. So, let's add a few more properties to our Person class. I've also added some comments to help explain what the code.
+
+<!-- note: add age and height props -->
 
 ```java
 /**
@@ -2256,6 +2462,8 @@ public class Person {
 ```
 
 Now we have more properties we can use.
+
+<!-- note: using new props -->
 
 ```java
 public class Main {
@@ -2285,6 +2493,9 @@ This code should be fairly clear. As before, we're creating two Person objects a
 
 ## State
 
+<!-- note: an object has state -->
+<!-- note: state are the properties at any point in time -->
+
 Properties are used to hold an object's _state_. State is the exact set of values that we are using to describe an object at any point in time. 
 
 ```java
@@ -2293,6 +2504,8 @@ Person doug = new Person();
 ```
 
 As soon as I instantiate a new Person object it has state. The state is that the person has no name, is 0 years old, and is 0 feet tall. This is the default state. 
+
+<!-- note: state can change -->
 
 However, when I set an object's properties, I change its state. 
 
@@ -2314,9 +2527,13 @@ This code updates the Person's state. Now the person is named Doug, is 38, and 6
 }
 ```
 
+<!-- note: constructors set an object's initial state -->
+
 Constructors are defined within the curly braces that denote a class' body. Typically constructors are placed after class properties. 
 
 Constructors are used to define the initial state of a new object. For our Person class, the default state is that a person has no name, is 0 years old, and is 0 feet tall. This isn't a very good model of reality. Let's add a constructor to resolve this:
+
+<!-- note: I add constructor for name, age, height -->
 
 ```java 
 /**
@@ -2363,6 +2580,8 @@ public Person(String name, int age, double height){
 }
 ```
 
+<!-- note: sets initial values of properties (this) from args -->
+
 In this example the access modifier is `public`. This means that any code can call the constructor when instantiating a new `Person` object. 
 
 The next word in the constructor is "`Person`", which must match the class name. This is how Java knows that this chunk of code is a constructor. 
@@ -2370,6 +2589,8 @@ The next word in the constructor is "`Person`", which must match the class name.
 What follows next are a the constructor's _arguments_. An argument is a variable passed into a block of code when it's invoked. This constructor takes three arguments when a Person is instantiated, all of which must be provided. These are `name`, `age`, and `height`, which are respectively `String`, `int` and `double` variables. We can use these variables inside the body of the constructor.
 
 Everything between the curly braces is the body of the constructor. In this example the constructor body is:
+
+<!-- note: body of constructor -->
 
 ```java
 this.name = name;
@@ -2382,6 +2603,8 @@ The body of the constructor introduces a new keyword, `this`. The `this` keyword
 So, `this.name = name` sets the current instance's `name` property to be the value passed into the `name` argument. 
 
 Now, when we create a new instance of a `Person` class we must provide three constructor arguments, `name`, `age`, and `height`. Here's how we'd do that:
+
+<!-- note: here I use the new constructor -->
 
 ```java
 public class Main {
@@ -2413,18 +2636,28 @@ Adding the constructor has enforced our requirement that new instances of `Peopl
 }
 ```
 
+<!-- note: two defining characteristics of a programatic object ** has data ** does stuff with the data -->
+
 There are two defining characteristics of a programatic object:
 
 * It holds its own data
 * It has methods that can interact with that data
 
+<!-- note: person only holds data -->
+
 So far our Person class only holds data, but it doesn't do anything with that data. It's not uncommon to write a class that only holds data. For that matter, you might reasonably have a class that has methods, but no data. Because we are trying to model the real world with our Person class, we should imbue it some behaviors.
 
+<!-- note: add methods to "do stuff" -->
+
 You give classes the ability to "do stuff" (not a technical term) using methods. A _method_ is a chunk of code in a class that, well, _does stuff_. For example, it could perform a calculation, store data in properties, write a file to disk, or anything else.
+
+<!-- note: added in class body -->
 
 Methods are defined anywhere within the curly braces that define a class' body. Typically these are added after constructors. You can have as many methods as you wish. By convention, method names start with a lower case letter just like variable names. Method names should express what the method does. 
 
 Real people in the physical world give high fives to each other. Let's model that in our `Person` class. Let's declare that a Person can receive high five.
+
+<!-- note: added receive high-five method and private highFivesReceived property -->
 
 ```java
 /**
@@ -2479,7 +2712,11 @@ This code has two significant updates. Firstly, we added a new property:
 private int highFivesReceived = 0;
 ```
 
+<!-- note: only the class itself can interact with private properties -->
+
 This is similar to the other properties we already had. The difference is that the access modifier has been set to `private`. The `private` access modifier tells Java that no code other than the Person class itself can set or update the highFivesReceived property. 
+
+<!-- note: words to live by -->
 
 **Remember:** Only you can touch your privates.
 
@@ -2493,9 +2730,14 @@ public void receiveHighFive(){
 }
 ```
 
+<!-- note: public method can change private data -->
+<!-- note: can't read or write property externally -->
+
 This method has a `public` access modifier. This means that any code can invoke this method. The `void` keyword means that this function doesn't return anything to us when we invoke it. The name of the method is `receiveHighFive`. Because the parenthesis are empty, the method doesn't accept any arguments. This means we can't provide any data when the method is invoked. Finally, the body of the method is `this.highFivesReceived++`, which increments the Person class' `highFivesReceived` property.
 
 We can invoke this method as follows:
+
+<!-- note: I use the property here -->
 
 ```java
 public class Main {
@@ -2522,7 +2764,13 @@ This presents us with a bit of a conundrum. If we make the `highFivesReceived` p
 
 ## Accessors and Mutators
 
+<!-- note: aka: getters and setters -->
+<!-- note: public methods to read/write private properties -->
+<!-- note: can control access and enforce rules -->
+
 Accessors and Mutators, colloquially (and acceptably) known as Getters and Setters are simply methods that are used to read and write private properties. In the case of our `Person` class we could add a "getter" that returns the number of high fives a `Person` object has received. 
+
+<!-- note: added method to get number of high fives received -->
 
 ```java
 /**
@@ -2585,6 +2833,8 @@ In the same way that the `+` addition operator returns the sum of two values, in
 
 I'll now update the `Main` class so that we can show how many high fives the `Person` has received.
 
+<!-- note: made use of getter for high fives received -->
+
 ```java
 public class Main {
     public static void main(String[] args){
@@ -2611,15 +2861,24 @@ This results in the following output:
 
 ## Responsibilities 
 
+<!-- note: classes should be responsibilities -->
+
 I like to think of classes as having _responsibilities_. I am responsible for writing this document and making it understandable. You are responsible for reading it and learning the material. The Person class is responsible for all things Person-y in our program.
 
+<!-- note: don't duplicate code -->
+
 It doesn't make sense for multiple bits of code to do the same thing. As an example, let's think about the description of the `Person` objects the `Main` class is outputting. 
+
+<!-- note: should the main method be responsible for describing a person? -->
+<!-- note: what if this is needed somewhere else too? -->
 
 What if I wrote some other class that also interacts with the `Person` class? What if that other class also needs a description of a `Person` object? Do I copy and paste the code from the `Main` class? What if the description needs to be changed at some point? 
 
 I don't think the `Main` class (or any other class) should have the responsibility to describe a `Person` class. The `Person` class should be solely responsible for that. Furthermore, the Main class is already doing a lousy job of it as it doesn't take into account plurality. For example, "This person has received 1 high fives."
 
 To facilitate this, we could add a method to the `Person` class that returns a description of a `Person` object.
+
+<!-- note: I put the logic into the person -->
 
 ```java
 /**
@@ -2695,6 +2954,8 @@ In here you can see that I've added another public method, `describe()`. The `de
 
 On a side note, these three lines each use the [ternary operator](https://en.wikipedia.org/wiki/%3F:):
 
+<!-- note: hey look, the ternary operator! -->
+
 ```java
 String years = this.age == 1 ? "year" : "years";
 String feet = this.height == 1 ? "foot" : "feet";
@@ -2706,6 +2967,8 @@ The ternary operator is similar to an if conditional, but otherwise unique to it
 > If `this.age` is 1, then return "year". Otherwise return "years".
 
 The other lines are the same.
+
+<!-- note: I use the new describe method. Isn't that nice? -->
 
 ```java
 public class Main {
@@ -2733,7 +2996,11 @@ In this code I'm now invoking the describe() method on the Person objects instea
 
 # Wrap Up
 
+<!-- note: You are now pointed West. Enjoy the trip -->
+
 That ends the Java Crash Course. Hopefully you've learned enough that you feel like you've been pointed in the right direction. Keep going!
+
+<!-- note: Ask for directions as you go: -->
 
 Here are some suggestions:
 
@@ -2741,5 +3008,7 @@ Here are some suggestions:
 * Work through the [Codecademy course on Java](https://www.codecademy.com/learn/learn-java)
 * Do the [Java exercises on Codewars](http://www.codewars.com/?language=java)
 * Attend [Java meetups](http://www.meetup.com/Triangle-Java-Users-Group/)
+
+<!-- note: or, just buy a map (take my class) -->
 
 And, of course, take my [Java class here at The Iron Yard](https://www.theironyard.com/courses/java-and-clojure.html)!
