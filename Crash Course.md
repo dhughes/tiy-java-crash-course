@@ -1388,6 +1388,9 @@ Logical operators return boolean true or false values. We can use these to contr
 
 **Returns:** True if both boolean values provided are true, otherwise false.
 
+<!-- note: you will often need to make decisions -->
+<!-- note: nasa only launches if: <br/>wind speed is below 42<br/>sky is clear -->
+
 In programming you will often want to make decisions based on one or more conditions. For example, among other criteria, [NASA will only launch a rocket if](http://www.nasa.gov/centers/kennedy/news/releases/2003/release-20030128.html) the wind speed is below 42 knots and the sky is clear. This can be expressed using the logical and operator.
 
 ```java
