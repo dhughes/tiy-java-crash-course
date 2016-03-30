@@ -415,7 +415,14 @@ I hope you like semicolons!
 
 # Variables
 
+<!-- note: remember highschool algebra? -->
+<!-- note: variables stand in for other values -->
+
 Do you remember basic algebra from middle school? Remember how variables could stand in for numeric values? Variables in Java are the same concept, but they can stand in for other types of data too.
+
+<!-- note: we can say x = 2016 -->
+<!-- note: anywhere we see x, we know it means 2016 -->
+<!-- note: any type of data, not just numbers -->
 
 In algebra you might say that `x = 2016`. Now, anywhere you see `x` you can substitute `2016`. That works in Java too. 
 
@@ -433,13 +440,25 @@ public class Example {
 }
 ```
 
+<!-- note: variables can be more than just "x" -->
+
 Variables in Java don't need to be single letters like `x`. In Java variable names can be entire words, though there are some important rules you have to follow.
 
+<!-- note: case sensitive -->
+
 * Variable names are _case sensitive_! A variable named `person` can only be accessed as `person`, not `Person`, `PERSON`, `perSon`, or any other variation.
+
+<!-- note: must start with letter, underscore, or $ -->
+
 * Variables can only start with a letter, the underscore character `_`, or a dollar sign `$`. This means that a variable may not start with a number or any other special character.
+
+<!-- note: rest can be letter, underscore, or $ AND numbers -->
+
 * Subsequent characters in the variable name can be any combination of letters, numbers, dollar signs, or underscores.
 
 Here are some valid (though mostly terrible) variable names:
+
+<!-- note: some valid names: -->
 
 * `x`
 * `X`
@@ -451,6 +470,8 @@ Here are some valid (though mostly terrible) variable names:
 
 Here are some invalid variable names:
 
+<!-- note: some invalid names: -->
+ 
 * `@username`
 * `1thing`
 * `\[person\]`
@@ -460,15 +481,24 @@ There are some common conventions used when naming variables in Java:
 
 ### Give variables meaningful names that are easily understood.
 
+<!-- note: use meaningful names. -->
+<!-- note: "delay" means more than "dly" -->
+ 
 Don't unnecessarily abbreviate or use acronyms. For example, a variable named `delay` is much easier to understand than one named `dly` or `d`. I'd much rather see an excessively long variable name I can easily understand rather than a short one that is inscrutable.
 
 ### Variables should either be lower case or [camelCase](https://en.wikipedia.org/wiki/CamelCase).
 
 **Syntax:** `<data type> <variable name>`
 
+<!-- note: lower case -->
+<!-- note: camel case -->
+<!-- note: ask for demos at whiteboard! -->
+ 
 In camel case the first letter of a variable is always lowercase. If the variable is made up of multiple words strung together, the first letter of each subsequent word is capitalized.
 
 Here are some good variable names:
+
+<!-- note: good names -->
 
 * `name`
 * `camelCase`
@@ -476,6 +506,8 @@ Here are some good variable names:
 * `weightPerPigeon`
 
 Here are some bad variable names:
+
+<!-- note: bad names -->
 
 * `NAME`
 * `camelcase`
@@ -486,7 +518,15 @@ In some other languages it is common to separate multiple words with underscore.
 
 ## Static Typing
 
+<!-- note: variables only store one type of data -->
+<!-- note: you declare the data type up front -->
+<!-- note: we'll use very basic types of data (letters and numbers) for now -->
+
 All variables in java are _statically typed_. In other words, you, as the developer, have to explicitly tell Java what type of data a variable stores. Data is any type of information. It could be an audio file, the geographic location of two cities, your own age, weight, and height, or anything else. For now we'll focus on really simply types of data.
+
+<!-- note: you must specify data type -->
+<!-- note: give it a name -->
+<!-- note: optionally set initial value -->
 
 When setting a variable in Java you explicitly specify the variable's data type, its name, and, optionally, an initial value. If we wanted to create a variable to hold a simple numeric value we could write.
 
@@ -504,11 +544,16 @@ public class Example {
 }
 ```
 
+<!-- demo: demo this -->
+
 In this example, `int` tells Java that the variable is an integer; a whole or counting number. We name the variable `meaningOfLife`. The `=` sign tells Java that we're setting the variable to `42`. 
 
 In English this is the same as saying, "Remember that the meaning of life is 42!"
 
 # Primitives
+
+<!-- note: primitives are the most basic type of data -->
+<!-- note: used to make more complex types of data  -->
 
 _Primitives_ are the most basic type of data in Java. They are pure, simple, values and serve as building blocks for more complex types of data.
 
@@ -516,11 +561,15 @@ The `int` example above uses the primitive data type of integer. An integer is o
 
 The most common primitive data types are:
 
+<!-- note: the most common types are:  -->
+
 * **boolean** A value indicating true or false.
 * **integer** A whole number.
 * **long** A (potentially very big) whole number.
 * **double** A (potentially very big) decimal number.
 * **char** A single character.
+
+<!-- note: there are other primitives we're skipping -->
 
 We'll skip over the other primitives. [You can get more details about primitive data types here.](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 
@@ -528,11 +577,20 @@ We'll skip over the other primitives. [You can get more details about primitive 
 
 **Keyword:** `boolean`
 
+<!-- note: booleans are either true or false -->
+<!-- note: named after a mathematician -->
+
 Booleans are primitive values that indicate _true_ or _false_.
+
+<!-- note: examples: -->
 
 Is 12 greater than 42? `False`.
 
 Is Doug an Iron Yard instructor? `True`.
+
+<!-- note: used to make decisions -->
+<!-- note: is a user logged in? if not, login form -->
+<!-- note: is the price of a stock under my limit? if so, buy! -->
 
 We can use boolean values to make decisions and control what our application does. For example, we can check to see if a user is logged into our application. If not (`false`) they are sent to a login form. If so (`true`), they may use the application.
 
@@ -557,13 +615,22 @@ public class Example {
 
 **Keyword:** `int`
 
+<!-- note: integers are our counting numbers. -->
+<!-- note: keyword is "int" -->
+
 Integers represent whole numbers. Whole numbers are the numbers we count with, 1, 2, 3..., etc.
 
+<!-- note: have limits: -2 billion to +2 billion -->
+
 In Java, integers are any whole number from -2,147,483,648 to 2,147,483,647.
+
+<!-- note: no commas! -->
 
 _Note: Java's syntax for integers does not allow for commas!_
 
 Here are some example integers:
+
+<!-- note: some examples of integers: -->
 
 * -2147483648
 * -7836832
@@ -576,6 +643,9 @@ Here are some example integers:
 
 These are _not_ integers:
 
+<!-- note: not integers: -->
+
+* 1,245
 * -123.456
 * 0.57721
 * 3.1415
@@ -600,13 +670,22 @@ public class Example {
 
 **Keyword:** `double`
 
+<!-- note: doubles are decimal numbers. -->
+<!-- note: these are only an estimate in java!! -->
+
 Doubles represent decimal numbers. Unfortunately, it is difficult to represent decimal numbers precisely in binary. Because of this, doubles are actually _estimates_ of decimal value. This can be a problem when comparing values. We'll come back to this.
 
+<!-- note: don't use doubles for money! -->
+
 Doubles should not be used when doing anything with money. If you need that, take a look at [BigDecimal](https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html).
+
+<!-- note: doubles can be very small (-9 quintillion) to very big! (+9 quintillion) -->
 
 Doubles can be any number from -9,223,372,036,854,775,808 (very small) to 9,223,372,036,854,775,807 (exceptionally large). Again, you can't actually use commas in Java numbers.
 
 Here are some example doubles:
+
+<!-- note: a bunch of examples: -->
 
 * -2147483648
 * -7836832
@@ -623,6 +702,8 @@ Here are some example doubles:
 * 2147483647
 
 You can add a "d" onto the end of a number to explicitly differentiate doubles from integers:
+
+<!-- note: we can also use "d" to indicate a number is a double. -->
 
 * 0.57721d
 
@@ -643,13 +724,19 @@ public class Example {
 }
 ```
 
+<!-- note: sometimes called floating point numbers -->
+
 Double are sometimes called _floating point numbers_. 
 
 ## Char
 
 **Keyword:** `char`
 
+<!-- note: represents a single character -->
+
 A char represents a single character. For example:
+
+<!-- note: some examples -->
 
 * a
 * Z
@@ -672,34 +759,19 @@ public class Example {
 }
 ```
 
+<!-- note: kinda limited. -->
+<!-- note: chars are collected together to make Strings -->
+
 As you can imagine, a single character has limited utility. We'll need to find a way to collect a sets of characters together to form words and sentences. These are called strings and we'll get to them in a bit.
-
-## Null
-
-**Keyword:** `null`
-
-Null is not actually a type of data. Null is the absence of value. It is not zero. It is not anything. It is the black hole of values.
-
-Null can be used to tell Java that there is no value for a variable. For example, what is the address of a homeless person? Null. They have no address.
-
-<!-- todo: see if the class can come up with their own examples of null -->
-
-```java
-public class Example {
-    public static void main(String[] args){
-    
-        String address = null;
-		
-      	System.out.println(address);
-    }
-}
-```
-
-[The inventor of null, Tony Hoare, calls it his billion-dollar mistake.](https://www.lucidchart.com/techblog/2015/08/31/the-worst-mistake-of-computer-science/)
 
 # Operators
 
 ![hello operator.jpg](https://tiy-learn-content.s3.amazonaws.com/910fb126-hello%20operator.jpg)
+
+<!-- note: Operators are used to manipulate data -->
+<!-- note: add, subtract, etc -->
+<!-- note: work on one, two, or three values -->
+<!-- note: produce new values -->
 
 Operators are used to manipulate data. They can act on one, two, or even three individual values. They might modify the data directly or produce an entirely new value that we can work with.
 
@@ -711,7 +783,12 @@ Operators are used to manipulate data. They can act on one, two, or even three i
 
 **Syntax:** `<Variable to set> = <Value to assign to the variable>`
 
+<!-- note: The assignment operator -->
+<!-- note: sets the value of variables -->
+
 We've already seen the assignment operator. The assignment operator is used to set the value of a variable. The variable being set is to the left of the `=` operator. The value to use is to the right of the `=` operator.
+
+<!-- note: variable on left set to value on right -->
 
 ```java
 public class Example {
@@ -726,6 +803,9 @@ public class Example {
     }
 }
 ```
+
+<!-- note: variable assigned must be the same type as the value -->
+<!-- note: you can't set a boolean variable to 'c' -->
 
 Because Java is statically typed, you must always be sure to only assign values to variables of the same type. For example, you can't set a boolean variable to `'c'`.
 
@@ -743,6 +823,12 @@ public class Example {
     }
 }
 ```
+
+<!-- note: Java will auto-convert some values -->
+<!-- note: int to double -->
+<!-- note: called widening -->
+<!-- note: a double can contain all the info an integer does -->
+<!-- note: an integer can't contain all the info a double can -->
 
 That said, there are some places where Java will automatically convert data types for you. For example, you can set a double variable to an integer value. Java will simply convert the integer to a double for you. This is called _widening_. The reason this can be done is that a double can contain all the information in an integer and more.
 
@@ -766,6 +852,8 @@ public class Example {
 
 ## Arithmetic Operators
 
+<!-- note: arithmetic operators are the ones we're used to, plus, minus, etc -->
+
 Computers excel at arithmetic. After all, that's what they're designed to do!
 
 ### Addition Operator
@@ -776,7 +864,15 @@ Computers excel at arithmetic. After all, that's what they're designed to do!
 
 **Returns:** The sum of the two values.
 
+<!-- note: adds the value on the left to the value on the right -->
+<!-- note: result is "returned" (given back to us to work with) -->
+
 The addition operator adds two values together. The value to the left of the `+` sign is added to the value on the right. The resulting value is _returned_. This works more or less as you would think it should.
+
+<!-- note: works more or less as expected -->
+<!-- note: also used for concatenation -->
+
+<!-- note: demo shows additional. also shows concatenation and fails -->
 
 ```java
 public class Example {
@@ -786,15 +882,21 @@ public class Example {
       
       	System.out.println("A dozen is " + dozen + " things.");
       	
-      	// Note: this doesn't work as expected without the parenthesis around "dozen + 1". Any ideas why?
+      	// Note: this doesn't work as expected. Any ideas why?
       	// Hint: It has something to do with algebra. Think about PEMDAS. 
-      	// Another Hint: It also has something to do with handling different data types.
-      	System.out.println("A baker's dozen is " + (dozen + 1) + " things.");
+      	// Hint: put parenthesis around dozen + 1.
+      	System.out.println("A baker's dozen is " + dozen + 1 + " things.");
     }
 }
 ```
 
+<!-- note: this shows combining multiple operations in one expression -->
+<!-- note: assignment operation and addition operation -->
+<!-- note: right side of = evaluated first -->
+
 The above example shows that you can combine two or more operators in a single _expression_. Remember that the `=` operator assigns the value on the right into the variable on the left. Logically, Java has to _evaluate_ the value on the right first. The result of that evaluation is what the `=` operator assigns into the variable.
+
+<!-- note: the data types match -->
 
 You should also take note that the result of adding 4 to 8 is an integer value. The variable we're setting is also an integer. We always have to be thinking about data types.
 
@@ -805,6 +907,8 @@ You should also take note that the result of adding 4 to 8 is an integer value. 
 **Syntax:** `<a value> - <another value>`
 
 **Returns:** The difference of the two values.
+
+<!-- note: as expected, this subtracts two values -->
 
 Similar to the addition operator, the subtraction operator subtracts the value to the right of the `-` symbol from the value on the left and returns the result.
 
@@ -834,6 +938,8 @@ public class Example {
 
 **Returns:** The product of the two values.
 
+<!-- note: this multiplies values. Note, we use *, not "x" -->
+
 The multiplication operator multiplies the value to the left of the `*` operator by the value on the right and returns the result.
 
 ```java
@@ -857,6 +963,9 @@ public class Example {
 
 **Returns:** The quotient of the two values.
 
+<!-- note: this divides values. -->
+<!-- note: must be a front slash! -->
+
 The division operator divides the value to the left of the `/` symbol by the value on the right and returns the result.
 
 ```java
@@ -872,6 +981,9 @@ public class Example {
 }
 ```
 
+<!-- note: division in odd -->
+<!-- demo: show the example below and ask for a prediction -->
+
 Division is an interesting beast as far as types are concerned. Consider this example:
 
 ```java
@@ -885,6 +997,9 @@ public class Example {
 }
 ```
 
+<!-- note: dividing two integers always gives you an integer -->
+<!-- note: at least one operand must be a double to get a double result -->
+
 You might expect that `3/2` would return `1.5`, a double, but it doesn't. It actually returns `1`! This is because the _operands_, `3` and `2`, are integers, not doubles. If at least one of the operands is a double, then the result will be a double.
 
 ```java
@@ -897,6 +1012,9 @@ public class Example {
     }
 }
 ```
+
+<!-- note: this can be useful -->
+<!-- note: how many 3 egg omelets can you make with 116 eggs? -->
 
 Keep in mind that this behavior with integers may actually be useful. For example, imagine you run a breakfast restaurant serving omelets. Each omelet requires 3 eggs and you have 116 eggs total. How many people can you feed?
 
@@ -913,9 +1031,13 @@ public class Example {
 }
 ```
 
+<!-- note: possibly more useful than 38.666666666666664 -->
+
 According this this, you can feed 38 customers. A nice round integer like 38 is much more useful than 38.666666666666664, since we can't feed two thirds of a person. Granted, we could round this down, but that's another step, and not something you know how to do yet.
 
-<!-- todo: ask the class why there's a 4 at the end of 38.666666666666664 -->
+<!-- note: ask the class why there's a 4 at the end of 38.666666666666664 -->
+
+<!-- note: you can't divide an int by zero, but you can a double -->
 
 You can't divide an integer by zero, but you can divide a double by zero. 
 
@@ -927,11 +1049,16 @@ You can't divide an integer by zero, but you can divide a double by zero.
 
 **Returns:** The remainder when dividing the two values.
 
+<!-- note: modulo. pronounced mod-you-low -->
+<!-- note: gives us the remainder when dividing two numbers --> 
+
 Remember long division from elementary school?
 
 ![Long division - the bane of 4th graders everywhere.](https://tiy-learn-content.s3.amazonaws.com/2095fdec-long%20division.gif)
 
 The remainder operator, often called the modulo operator, returns the remainder when dividing the value to the left of the `%` symbol by the value to the right.
+
+<!-- note: how many eggs are left over after making your omelets? --> 
 
 Going back to the omelet example, perhaps you want to know how many eggs will be left over if you sell all of your omelets?
 
@@ -950,6 +1077,8 @@ public class Example {
 
 ## Unary operators
 
+<!-- note: unary operators only work on one operand -->
+
 Unary operators work with only one operand. Some unary operators modify the operand itself, others simply return the result of the operation.
 
 ### Unary increment
@@ -959,6 +1088,8 @@ Unary operators work with only one operand. Some unary operators modify the oper
 **Syntax:** `<a variable>++` or `++<a variable>`
 
 **Returns:** It depends...
+
+<!-- note: increases value by 1 -->
 
 The unary increment operator is used to add 1 to a variable. This example shows how a variable `x` is incremented. The result of this is that `x` becomes 124.
 
@@ -975,7 +1106,11 @@ public class Example {
 }
 ```
 
+<!-- note: can be before or after value -->
+
 The `++` symbol can be placed before or after a variable. However, the location of the operator changed its behavior subtly. This is because the unary increment operator doesn't only modify the variable being incremented, it also returns one of two values, depending on where the operator is placed.
+
+<!-- note: after first returns the value THEN increments it -->
 
 Placing the operator after the variable increments the variable and returns the value of the variable _before_ it is incremented.
 
@@ -994,7 +1129,11 @@ public class Example {
 }
 ```
 
+<!-- note: last line reads: "set `y` to the value of `x`, then increment `x` by 1" -->
+
 You can read the last line of this sample as, "set `y` to the value of `x`, then increment `x` by 1." In this example `x` becomes 124 and `y` becomes 123.
+
+<!-- note: before first increments the value THEN returns it -->
 
 Placing the operator before the variable causes the variable to be incremented _before_ the new value is returned.
 
@@ -1013,6 +1152,8 @@ public class Example {
 }
 ```
 
+<!-- note: last line reads: "increment x by 1 and then set y to the value of x." -->
+
 You can read the last line of this sample as, "increment x by 1 and then set y to the value of x." In this example both `x` and `y` become 124.
 
 ### Unary decrement
@@ -1022,6 +1163,8 @@ You can read the last line of this sample as, "increment x by 1 and then set y t
 **Syntax:** `<a variable>--` or `--<a variable>`
 
 **Returns:** It depends...
+
+<!-- note: decreases value by one -->
 
 Similar to the unary increment operator, the unary decrement operator subtracts 1 from a variable.
 
@@ -1040,6 +1183,10 @@ public class Example {
 
 In this example `x` becomes 122.
 
+<!-- note: just like incrementing -->
+<!-- note: before = result after decrementing -->
+<!-- note: after = result before decrementing -->
+
 As with the unary increment operator, the placing the `--` operator before the variable returns the result after the variable has been decremented. Placing the `--` operator after the variable returns the variable before it is decremented.
 
 ### Unary negation
@@ -1049,6 +1196,8 @@ As with the unary increment operator, the placing the `--` operator before the v
 **Syntax:** `-<a variable or value>`
 
 **Returns:** A negated value.
+
+<!-- note: this just negates a number -->
 
 Just like in math, you use the negation operator to denote negative numbers.
 
@@ -1224,6 +1373,10 @@ Be aware that comparison operators can only be used with two values, the value t
 ## Logical Operators
 
 So far we've seen how to modify, combine, and compare values using arithmetic, unary, and comparison operators. Now we need to learn how to make decisions accordingly.
+
+<!-- note: logical operators are used to make decisions -->
+<!-- note: return boolean true or false -->
+<!-- note: can be used to control how our programs behave -->
 
 Logical operators return boolean true or false values. We can use these to control how our programs behave.
 
@@ -1904,6 +2057,32 @@ public class Example {
         Date birthday = new Date(1977, 11, 9, 5, 54);
         System.out.println("Born in year: " + birthday.getYear());
 
+    }
+}
+```
+
+## Null
+
+**Keyword:** `null`
+
+<!-- note: null is the absence of value -->
+
+Null is not actually a type of data. Null is the absence of value. It is not zero. It is not anything. It is the black hole of values.
+
+<!-- note: used to indicate that a variable has no value -->
+<!-- note: what is the address of a homeless person? null -->
+
+Null can be used to tell Java that there is no value for a variable. For example, what is the address of a homeless person? Null. They have no address.
+
+<!-- note: any better examples!? (please?) -->
+
+```java
+public class Example {
+    public static void main(String[] args){
+    
+        String address = null;
+		
+      	System.out.println(address);
     }
 }
 ```
