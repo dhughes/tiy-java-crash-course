@@ -488,8 +488,6 @@ Don't unnecessarily abbreviate or use acronyms. For example, a variable named `d
 
 ### Variables should either be lower case or [camelCase](https://en.wikipedia.org/wiki/CamelCase).
 
-**Syntax:** `<data type> <variable name>`
-
 <!-- note: lower case -->
 <!-- note: camel case -->
 <!-- note: ask for demos at whiteboard! -->
@@ -1240,7 +1238,7 @@ Very often we need to compare values. Java provides a set of operators we can us
 
 **Operator:** `==`
 
-**Syntax:** `<a boolean value> == <another boolean value>`
+**Syntax:** `<a value> == <another value>`
 
 **Returns:** True if the value on the left is equal to the value on the right.
 
@@ -1267,7 +1265,7 @@ Be sure to note that the equality operator, `==`, is completely different from t
 
 **Operator:** `!=`
 
-**Syntax:** `<a boolean value> != <another boolean value>`
+**Syntax:** `<a value> != <another value>`
 
 **Returns:** True if the value on the left is _not_ equal to the value on the right.
 
@@ -1290,7 +1288,7 @@ Since 5 doesn't equal 6 the first line evaluates to true. However, since 5 is th
 
 **Operator:** `>`
 
-**Syntax:** `<a boolean value> > <another boolean value>`
+**Syntax:** `<a value> > <another value>`
 
 **Returns:** True if the value on the left is greater than the value on the right.
 
@@ -1310,7 +1308,7 @@ public class Example {
 
 **Operator:** `<`
 
-**Syntax:** `<a boolean value> < <another boolean value>`
+**Syntax:** `<a value> < <another value>`
 
 **Returns:** True if the value on the left is less than the value on the right.
 
@@ -1330,7 +1328,7 @@ public class Example {
 
 **Operator:** `>=`
 
-**Syntax:** `<a boolean value> >= <another boolean value>`
+**Syntax:** `<a value> >= <another value>`
 
 **Returns:** True if the value on the left is greater than or equal to the value on the right.
 
@@ -1350,7 +1348,7 @@ public class Example {
 
 **Operator:** `<=`
 
-**Syntax:** `<a boolean value> <= <another boolean value>`
+**Syntax:** `<a value> <= <another value>`
 
 **Returns:** True if the value on the left is less than or equal to the value on the right.
 
@@ -1513,10 +1511,12 @@ For example:
 	* If so: Turn on the cooling unit. 
 
 * Has the user filed their TPS report today?
+<!-- note: but did the report have a cover? -->
 	* If so: 
 		* Thank them for being such a valued employee.
 	* If not:
 		* Nag them.
+<!-- todo: add picture? -->
 
 ## If statements
 
