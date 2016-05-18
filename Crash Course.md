@@ -498,7 +498,7 @@ class Card{
 	    if(faceUp){
 		    return value + " of " + suit;
 	    } else {
-	        return "******";
+	        return "------";
 	    }
 	}
 	
@@ -533,9 +533,9 @@ class Main {
 When run, this code will output:
 
 > Ace of Diamonds
-> `******`
+> ------
 
-The first line, "Ace of Diamonds", is printed because the card is face up. However, after printing that out we call the `flip()` method. This sets the card to be face down. As such, when we print the card next we only see '******'.
+The first line, "Ace of Diamonds", is printed because the card is face up. However, after printing that out we call the `flip()` method. This sets the card to be face down. As such, when we print the card next we only see '------'.
 
 ## Conclusion
 
