@@ -1,4 +1,6 @@
 
+Please fill out this form: http://goo.gl/omUfDq
+
 Find this class online at: https://goo.gl/NTISVQ
 
 # Welcome To the Java Crash Course at The Iron Yard!
