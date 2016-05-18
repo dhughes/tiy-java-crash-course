@@ -8,7 +8,7 @@ Find this class online at: https://goo.gl/NTISVQ
 ## Hello, I'm Doug and I'll Be Your Instructor Tonight.
 
 * Java instructor at the Raleigh The Iron Yard campus.
-* Programmer for more than 17 years using a plethora of languages.
+* Programmer for more than 17 years, using a plethora of languages.
 * I've worked with dozens of companies on a wide range of projects.
 
 <!-- Try to entice the class to participate. -->
@@ -66,9 +66,9 @@ This process of hiding implementation details is called _abstraction_.
 
 ## Hello World
 
-Let's get started here by writing our first Java program. When learning a new language, programmers typically begin by writing the simplest possible program. Traditionally, this program just outputs the text  "Hello world."
+Let's get started here by writing our first Java program. When learning a new language, programmers typically begin by writing the simplest possible program. Traditionally, this program simply outputs the text  "Hello world."
 
-Java programmers usually write code in specialized text editors called an Integrated Development Environments (IDEs). An IDE provides a wide range of tools to help programmers write and debug code. However, for the purposes of this class, we'll be using an online tool called [glot.io](https://glot.io/) to write, run, and share our code. 
+Java programmers usually write code in specialized text editors called  Integrated Development Environments (IDEs). An IDE provides a wide range of tools to help programmers write and debug code. However, for the purposes of this class, we'll be using an online tool called [glot.io](https://glot.io/) to write, run, and share our code. 
 
 Go to https://glot.io/new/java to get started. Here you will see a simple interface that will allow you to enter code and run it.
 
@@ -86,7 +86,7 @@ Go ahead and click the run button. You'll see the text "Hello World" output.
 
 ## Modeling with Object Oriented Programming
 
-Software is often used to model the real world. For example, the desktop on your computer was originally designed to mimic a desk in a traditional office, complete with file folders, a calendar, a clock, etc. Video games often model scenes, characters, and the physics of the real world. Online purchases model purchases in the real world.
+Software is often used to model the real world. For example, the desktop on your computer was originally designed to feel like a desk in a traditional office; complete with file folders, a calendar, a clock, etc. Video games often model scenes, characters, and the physics of the real world. Online purchases model purchases in the real world.
 
 One relevant dictionary definition of model is:
 
@@ -134,7 +134,7 @@ This class doesn't actually _do_ or _describe_ anything, but it is 100% valid co
 
 ## Objects
 
-Java classes describe objects, but are not actually the objects. 
+Java classes describe objects, but are not actually the objects being described. 
 
 A class is like a blueprint for a house. A blueprint is a detailed plan for building a house. It shows the placement and measurements of all rooms, where fixtures will be placed, where utilities will be run, how the roof will be assembled, and much more. 
 
@@ -152,7 +152,7 @@ You create an instance of an object using the `new` keyword. For example:
 new {class name}()
 ```
 
-The `new` keyword tells Java to create a new _instance_ of the class. The {class name} is a placeholder for a class name. This is class to create an instance of. This must be followed by parenthesis. The parenthesis are called a _constructor_.
+The `new` keyword tells Java to create a new _instance_ of the class. The `{class name}` is a placeholder for a class name. This specifies the class to create an instance of. This must be followed by parenthesis. The parenthesis are called a _constructor_.
 
 If we wanted to create a new instance of the `Card` class we could write this:
 
@@ -165,7 +165,7 @@ You can place this code inside a method like this:
 ```java
 class Main {
     public static void main(String[] args) {
-        System.out.println(new Card());
+        System.out.println( new Card() );
     }
 }
 ```
@@ -182,7 +182,7 @@ Our Card still doesn't actually _do_ or _describe_ anything yet, but now we can 
 
 ## Variables 
 
-Sometimes we want to hold onto an object or value so we can reference it later on. In Java we use variables to hold this data. Do you remember basic algebra? Remember how variables are used to stand in for numeric values? Variables in Java are the same concept, but they can stand in for other types of data too.
+Sometimes we want to hold onto an object or value so we can reference it or change it later on. In Java we use variables to hold this data. Do you remember basic algebra? Remember how variables are used to stand in for numeric values? Variables in Java are the same concept, but they can stand in for any type of data, not just numbers.
 
 The basic syntax for creating a variable is this:
 
@@ -196,9 +196,9 @@ This syntax is used to tell Java that a variable exists, what type of data the v
 
 `{variable name}` is a placeholder for a variable's name. Variable names must start with a letter (typically lower case) and can contain letters, numbers, and the underscore character, `_`.
 
-`=` is the _assignment operator_. An operator is a special bit of syntax that tells Java to perform some action on one, two, or three bits of data known as operands. In this case, the assignment operator assigns the value to the right of the operator to the variable specified to the left side.
+`=` is the _assignment operator_. An operator is a special bit of syntax that tells Java to perform some action on one, two, or three _operands_. Operands are the data an operator uses. In this case, the assignment operator assigns the value to the right of the operator to the variable specified to the left side.
 
-`{data / value}` specified the actual value to store in the variable. This value must be of the same time as specified in `{data type}`. 
+`{data / value}` is a placeholder indicating a specific value to store in the variable. This value must be of the same type as specified in `{data type}`. 
 
 You can also declare a variable without setting its initial value using this syntax:
 
@@ -206,7 +206,7 @@ You can also declare a variable without setting its initial value using this syn
 {data type} {variable name};
 ```
 
-Beyond just declaring a variable, you can later read and/or change its value. For example:
+Beyond just declaring a variable, you can later read and/or change a variable's value. For example:
 
 ```java
 class Main {
@@ -243,7 +243,7 @@ In Java there are two types of data, primitives and objects.
 Primitives are a small set of basic data types. The most common primitives are:
 
 `boolean` - A value indicating true or false.
-`int` - `int` is short for integer. Integers are the numbers we count with, -5, -4, -3, -2, -1, 0, 1, 2, 3..., etc.
+`int` - Short for integer, int represents the numbers we count with, -5, -4, -3, -2, -1, 0, 1, 2, 3..., etc.
 `double` - A (potentially very big) decimal number.
 
 An example of a primitive variable would be:
@@ -254,25 +254,25 @@ int meaningOfLife = 42;
 
 ### Objects
 
-The other type of data in Java are objects. As we learned above, objects are instances of classes. Java comes with a staggering number of classes; more than 20,000! Each of these classes has a specific purpose in Java. 
+All other data in Java are objects. As we learned above, objects are instances of classes. Java comes with a staggering number of classes; more than 20,000! Each of these classes has a specific purpose in Java.
 
 One extremely common class is `String`. A string represent any string of letters, numbers, and other characters. IE: It's just text.
 
 Another example of a class is the `Card` class we wrote earlier.
 
-An example of a object variable would be:
+An example of a variable that holds an object would be:
 
 ```java
 Card aceOfHearts = new Card();
 ```
 
+Left to right, `Card` specifies the type of data. `aceOfHearts` specifies the name of the variable being created. The `=` assignment operator is used to set the value of the variable to the value to the right of the operator. The `new` keyword tells Java that we're going to be creating a new instance of a class. `Card` specifies the class we're creating an instance of. Finally, the parenthesis `()` are a constructor. 
+
 ## Class Properties
 
 Properties are how you describe things. A property of the sky is that it's blue. A property of a laptop is what CPU it has. A property of a tweet is the text of the tweet.
 
-In Java we use variables to hold data. Do you remember basic algebra? Remember how variables are used to stand in for numeric values? Variables in Java are the same concept, but they can stand in for other types of data too. 
-
-Class properties are simply variables defined for a specific class. Here's an example:
+Class properties are simply variables defined inside a specific class. Here's an example:
 
 ```java
 class Card{
@@ -282,27 +282,29 @@ class Card{
 }
 ```
 
-This example shows a class named `Card` that models a playing card. This class has three properties, `faceUp`, `value`, and `suit`. The default values of these variables are set to `true`, `"King"`, and `"Spades"` respectively.
+This example shows a class named `Card` that models a playing card. This class has three properties, `faceUp`, `value`, and `suit`. The default values of these properties are `true`, `"King"`, and `"Spades"` respectively.
 
-These properties can be accessed by any code in the `Card` class. And, by default, they can also be read and their values can be changed from "outside" the class. 
+These properties can be accessed by any code in the `Card` class. And, by default, they can also be read and modified from "outside" the class. 
 
 ```java
 class Main {
     public static void main(String[] args) {
+		// create an instance of a card and store it in a variable
 		Card myCard = new Card();
-		
+
+		// set two properties of the card
 		myCard.value = "Jack";
 		myCard.suit = "Clubs";
-		
+
+		// print a description of the card
         System.out.println(myCard);
     }
 }
 ```
 
-
 This example shows how we can create a new instance of a `Card` using the new keyword. The new `Card` instance is assigned to a variable named `myCard`. We can do this because we declared that `myCard` can hold `Card` data. 
 
-Next we modify two properties on the `myCard` object. This changes two of the three properties we defined inside the `Card` class. 
+Next, we modify two properties on the `myCard` object instance. This changes two of the three properties we defined inside the `Card` class. The `.` dot tells Java that the property belongs to the specified object. In this case, `value` is a property that belongs to `myCard` which is an instance of the `Card` class.
 
 Finally, we print out the `myCard` variable. Because we didn't tell our class to do anything different, this still results in output that looks like this:
 
@@ -324,7 +326,9 @@ public static void main(String[] args) {
 }
 ```
 
-Every Java program has a `main` method. This method is what the Java Runtime executes when you run your program. Code in methods are executed top to bottom. So, if you had ten lines of code in your main method, Java would first execute line 1, then 2, etc, until it reached line 3.
+Every Java program has a `main` method. This method is what the Java Runtime executes first when you run your program. It's the entry point to your projects. 
+
+The Code in methods is executed top to bottom. So, if you had ten lines of code in your main method, Java would first execute line 1, then 2, etc, until it reached line 3.
 
 Our `Main` class has one capability - defined by the `main` method - the ability to print "Hello World" to the console.
 
@@ -338,9 +342,9 @@ public {data type} {method name}(){
 }
 ```
 
-`public` is an example of an _access modifier_. An access modifier controls how other code interacts with the method. The `public` access modifier is the most permissive and allows any other code in Java to execute this method. 
+`public` is an example of an _access modifier_. An access modifier controls how other code interacts with the method. The `public` access modifier is the most permissive access modifier and allows any other code to execute this method. 
 
-Methods have the ability to _return_ data to the code that executes it. The `{data type}` placeholder is used to indicate what type of data the method will return. This is like the data type for a variable. However, methods don't have to return values. In this case the `{data type}` placeholder wold be replaced with `void`.
+Methods have the ability to _return_ data to the code that executes it. The `{data type}` placeholder is used to indicate what type of data the method will return. This is like the data type for a variable. Methods or not required to return values. If a method doesn't return anything the `{data type}` placeholder would be replaced with `void`.
 
 `{method name}` is a placeholder for a method's name. Method names must start with a letter (typically lower case) and can contain letters, numbers, and the underscore character, `_`. 
 
@@ -350,7 +354,11 @@ Finally, the `{}` curly braces define the body of the method. When methods are e
 
 All objects in Java are automatically given a number of methods. One of these is `toString()`. The `toString()` method is used to get a description of an instance of an object. By default, this is just the name of the class followed by a string of letters and numbers. This is what the `System.out.println()` method is using when it prints out our `Card`.
 
-Developers can optionally provide their own implementation of `toString()`. Perhaps we want to describe our card? We could do so like this:
+```
+Card@4aa298b7
+```
+
+Developers can optionally provide their own implementation of `toString()`. Perhaps we want to specify our own description of a card? We could do so like this:
 
 ```java
 class Card{
@@ -364,7 +372,7 @@ class Card{
 }
 ```
 
-Here we've declared the `toString()` method as being `public` (globally accessible) and indicated that it will return `String` data. In the body of the method we are using `+` addition operator to build a `String` that describes the current card. We use the `return` keyword to provide this `String` description back to whatever executed the method.
+Here we've declared the `toString()` method as being `public` (globally accessible) and indicated that it will return `String` data. In the body of the method we are using `+` addition operator to build a `String` that describes the current card. We use the `return` keyword to provide this `String` description back to whatever executes the method.
 
 Now, if we run our main method we'll see output that looks like this:
 
@@ -403,9 +411,11 @@ This example uses another operator, `>`, the greater than operator. Java has a n
 `<=` - Less than or equal to.
 `==` - Is equal to. Note, this is different than `=`, the assignment operator.
 
+Each of these operators compare the value on the left to the value on the right and returns true of false accordingly.
+
 In english, the example above says, "If `x`, which is 99, is greater than `y`, which is 10, then output the text 'x us greater than y!'."
 
-But, what if `x` isn't greater than `y`? This is where `else` statements come into play. The syntax for `if`/`else` expression is this:
+But, what if `x` isn't greater than `y`? This is where `else` statements can be handy. The syntax for `if`/`else` expression is this:
 
 ```
 if({conditional expression}){
@@ -428,7 +438,7 @@ if(x > y){
 }
 ```
 
-This can be read in english like, "If `x`, which is 10, is greater than `y`, which is 99, then output the text 'x us greater than y!'. Otherwise, output 'x s not greater than y!'."
+This can be read in english like, "If `x`, which is 10, is greater than `y`, which is 99, then output the text 'x is greater than y!'. Otherwise, output 'x is not greater than y!'."
 
 Lastly, if you have multiple conditions you want to test for you can use  `else if` expressions. The syntax for this is:
 
@@ -444,9 +454,9 @@ if({conditional expression}){
 }
 ```
 
-This shows how you can string conditional expressions together to make complex conditional statements. Java will only execute the first statement that evaluates to true.
+This shows how you can string individual conditional statement together to make complex conditional statement. Java will _only_ execute the first statement that evaluates to true.
 
-This type of conditional expression always starts with an `if` statement. This is optionally followed by as many `else if` statements as you want. The expression can optionally end with a single `else` statement that is run when none of the conditionals evaluated to true.
+This type of conditional expression always starts with an `if` statement. This is optionally followed by as many `else if` statements as you want. The expression can optionally end with a single `else` statement. The `else` statement is only run when none of the conditionals evaluate to true.
 
 ## Putting it all together
 
@@ -476,7 +486,7 @@ class Card{
 
 The new `flip()` method uses a conditional expression to see if the card is face up. If it is, it sets the card to be face down. If not, it sets the card to be face up. The method's return type is `void` because the method doesn't return anything, it just changes the state of the object.
 
-We can continue to build on our Card class using these features. For example, maybe we would like our card's to only show the suit and value when the card is face up. When the card is face down this should be hidden.
+We can continue to build our Card class using these features. For example, maybe we would like our card's description to only show the suit and value when the card is face up. When the card is face down this should be hidden.
 
 ```java
 class Card{
@@ -523,9 +533,9 @@ class Main {
 When run, this code will output:
 
 > Ace of Diamonds
-> ************
+> `******`
 
-The first line, "Ace of Diamonds", is printed because the card is face up. However, after printing that out we call the `flip()` method. This sets the card to be face down. As such, when we print the card next we only see '************'.
+The first line, "Ace of Diamonds", is printed because the card is face up. However, after printing that out we call the `flip()` method. This sets the card to be face down. As such, when we print the card next we only see '******'.
 
 ## Conclusion
 
@@ -544,12 +554,12 @@ You learned:
 * How to create new instances of objects.
 * How to use variables to store data.
 * What primitive datatypes are.
-* Some basic Java operators for ary
+* Some basic Java operators.
 * Properties are used to describe an object.
 * Methods are used to give objects capabilities.
 * Conditional logic is used when your application needs to make decisions.
 
-These few tools form the foundation of Java. Granted, this only scratches the surface of Java, but literally everything in Java makes use of these few constructs.
+These few tools form the foundation of Java. This lecture only scratches the surface of Java, but literally everything in Java builds off of these few constructs.
 
 ## Further learning
 
