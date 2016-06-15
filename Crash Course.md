@@ -1,5 +1,5 @@
 
-Please fill out this form: http://goo.gl/omUfDq
+Please fill out this survey: http://bit.ly/1XpXwu9
 
 Find this class online at: https://goo.gl/NTISVQ
 
