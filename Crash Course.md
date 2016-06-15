@@ -344,7 +344,7 @@ public {data type} {method name}(){
 
 `public` is an example of an _access modifier_. An access modifier controls how other code interacts with the method. The `public` access modifier is the most permissive access modifier and allows any other code to execute this method. 
 
-Methods have the ability to _return_ data to the code that executes it. The `{data type}` placeholder is used to indicate what type of data the method will return. This is like the data type for a variable. Methods or not required to return values. If a method doesn't return anything the `{data type}` placeholder would be replaced with `void`.
+Methods have the ability to _return_ data to the code that executes it. The `{data type}` placeholder is used to indicate what type of data the method will return. This is like the data type for a variable. Methods are not required to return values. If a method doesn't return anything the `{data type}` placeholder would be replaced with `void`.
 
 `{method name}` is a placeholder for a method's name. Method names must start with a letter (typically lower case) and can contain letters, numbers, and the underscore character, `_`. 
 
