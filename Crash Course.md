@@ -242,9 +242,9 @@ In Java there are two types of data, primitives and objects.
 
 Primitives are a small set of basic data types. The most common primitives are:
 
-`boolean` - A value indicating true or false.
-`int` - Short for integer, int represents the numbers we count with, -5, -4, -3, -2, -1, 0, 1, 2, 3..., etc.
-`double` - A (potentially very big) decimal number.
+* `boolean` - A value indicating true or false.
+* `int` - Short for integer, int represents the numbers we count with, -5, -4, -3, -2, -1, 0, 1, 2, 3..., etc.
+* `double` - A (potentially very big) decimal number.
 
 An example of a primitive variable would be:
 
