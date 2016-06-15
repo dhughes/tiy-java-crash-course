@@ -403,7 +403,7 @@ if(x > y){
 }
 ```
 
-This example uses another operator, `>`, the greater than operator. Java has a number of operators for comparing values:
+This example uses `>`, the greater than operator. Java has a number of operators for comparing values:
 
 `>` - Greater than.
 `>=` - Greater than or equal to.
