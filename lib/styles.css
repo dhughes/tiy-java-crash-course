@@ -1,5 +1,6 @@
 iframe{
 	width: 100%;
+	height: auto;
 }
 
 .border-on-the-side {
@@ -12,4 +13,5 @@ iframe{
 
 .l-header{
 	background-color: #39474e;
+	height: auto;
 }

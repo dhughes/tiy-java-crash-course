@@ -6,17 +6,11 @@ This lecture can be found at: http://dhughes.github.io/tiy-java-crash-course/
 
 [Please fill out our crash course survey.](http://bit.ly/2absN3C)
 
-## Hello, I'm Doug and I'll Be Your Instructor Tonight.
+## Hello, I'm Doug Hughes and I'll Be Your Instructor Tonight.
 
-* Java instructor at the Raleigh The Iron Yard campus.
+* I am a Java instructor at the Raleigh The Iron Yard campus.
 * Programmer for more than 17 years, using a plethora of languages.
 * I've worked with dozens of companies on a wide range of projects.
-
-<!-- Try to entice the class to participate. -->
-<!-- Ask for some volunteers to say why they're here tonight.
-	If no one volunteers, call out some people.
-	How many attended my previous crash course?
-	-->
 
 ## Writing Software in Java
 
