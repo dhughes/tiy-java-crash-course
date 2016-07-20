@@ -3,6 +3,7 @@ iframe{
 }
 
 .border-on-the-side {
+	margin: 2em 0 2em 0;
     max-width: 70rem;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
