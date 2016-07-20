@@ -1,5 +1,6 @@
 iframe{
 	width: 100%;
+	overflow-x: none;
 	overflow-y: scroll;
 	border: 1px solid gray;
 }
