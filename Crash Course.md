@@ -161,7 +161,7 @@ Sometimes we want to hold onto an object or value so we can reference it or chan
 The basic syntax for creating a variable is this:
 
 ```
-{data type} {variable name} = {data / value};
+{data type} {variable name} = {value};
 ```
 
 This syntax is used to tell Java that a variable exists, what type of data the variable is, and sets the variable's initial value.
