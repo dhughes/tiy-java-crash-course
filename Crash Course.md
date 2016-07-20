@@ -1,9 +1,11 @@
 
-Please fill out this survey: http://bit.ly/2absN3C
-
-Find this class online at: https://goo.gl/NTISVQ
-
 # Welcome To the Java Crash Course at The Iron Yard!
+
+This lecture can be found at: http://dhughes.github.io/tiy-java-crash-course/
+
+[Please fill out our crash course survey.](http://bit.ly/2absN3C)
+
+
 
 ## Hello, I'm Doug and I'll Be Your Instructor Tonight.
 
