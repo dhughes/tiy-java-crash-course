@@ -2,7 +2,7 @@ iframe{
 	width: 100%;
 }
 
-.max-width-2 {
+.border-on-the-side {
     max-width: 70rem;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
