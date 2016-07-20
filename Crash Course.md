@@ -20,7 +20,7 @@ This class is about the programming language Java. Java is just one of _hundreds
 
 To a fresh eye, programming languages often look like gibberish. For example:
 
-<iframe src='https://glot.io/snippets/egqarv4w4d/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
+<iframe src='https://glot.io/snippets/egqarv4w4d/embed' frameborder='0'  sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 This could be translated into english as something like, "Calculate an average score." This example is somewhat obtuse, but only to illustrate a point: _Java isn't english_. 
 
@@ -66,7 +66,7 @@ Go to https://glot.io/new/java to get started. Here you will see a simple interf
 
 The default program on glot.io just so happens to be a Hello World program:
 
-<iframe src='https://glot.io/snippets/egqcav81gh/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
+<iframe src='https://glot.io/snippets/egqcav81gh/embed' frameborder='0'  sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 Go ahead and click the run button. You'll see the text "Hello World" output.
 
@@ -88,7 +88,7 @@ The name class comes from classification. This dictionary definition of class ma
 
 All Java code is written in classes. We've already seen an example of a class:
 
-<iframe src='https://glot.io/snippets/egqcav81gh/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
+<iframe src='https://glot.io/snippets/egqcav81gh/embed' frameborder='0'  sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 Our Hello World program is made up of one class, `Main`. 
 
@@ -106,7 +106,7 @@ The `{Class Name}` shown in the example above is a placeholder for an actual cla
 
 The class name should make sense for what you're modeling. For example, if you're modeling a playing card, a logical class name would be `Card`:
 
-<iframe src='https://glot.io/snippets/egqcc75bo4/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
+<iframe src='https://glot.io/snippets/egqcc75bo4/embed' frameborder='0'  sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 This class doesn't actually _do_ or _describe_ anything, but it is 100% valid code.
 
@@ -140,7 +140,7 @@ new Card();
 
 You can place this code inside a method like this:
 
-<iframe src='https://glot.io/snippets/egqce8ph9m/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
+<iframe src='https://glot.io/snippets/egqce8ph9m/embed' frameborder='0'  sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 Here, I've updated our `Main` class' `main` method. Where before it printed out the text "Hello World", it now prints out a description of an instance of `Card`. When run, the output should look something like this:
 
@@ -180,7 +180,7 @@ You can also declare a variable without setting its initial value using this syn
 
 Beyond just declaring a variable, you can later read and/or change a variable's value. For example:
 
-<iframe src='https://glot.io/snippets/egqcezgh82/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
+<iframe src='https://glot.io/snippets/egqcezgh82/embed' frameborder='0'  sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 ## Types of Data
 
@@ -234,7 +234,7 @@ This example shows a class named `Card` that models a playing card. This class h
 
 These properties can be accessed by any code in the `Card` class. And, by default, they can also be read and modified from "outside" the class. 
 
-<iframe src='https://glot.io/snippets/egqcfzv0d1/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
+<iframe src='https://glot.io/snippets/egqcfzv0d1/embed' frameborder='0'  sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 This example shows how we can create a new instance of a `Card` using the new keyword. The new `Card` instance is assigned to a variable named `myCard`. We can do this because we declared that `myCard` can hold `Card` data. 
 
@@ -294,7 +294,7 @@ Card@4aa298b7
 
 Developers can optionally provide their own implementation of `toString()`. Perhaps we want to specify our own description of a card? We could do so like this:
 
-<iframe src='https://glot.io/snippets/egqcgo6tmb/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
+<iframe src='https://glot.io/snippets/egqcgo6tmb/embed' frameborder='0'  sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 Here we've declared the `toString()` method as being `public` (globally accessible) and indicated that it will return `String` data. In the body of the method we are using `+` addition operator to build a `String` that describes the current card. We use the `return` keyword to provide this `String` description back to whatever executes the method.
 
@@ -318,7 +318,7 @@ The `if` keyword indicates that this is a conditional expression. The body of th
 
 Here is a really simple conditional expression:
 
-<iframe src='https://glot.io/snippets/egqcw1tnpn/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
+<iframe src='https://glot.io/snippets/egqcw1tnpn/embed' frameborder='0'  sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 This example uses `>`, the greater than operator. Java has a number of operators for comparing values:
 
@@ -344,7 +344,7 @@ if({conditional expression}){
 
 Let's update our example above to use `else`:
 
-<iframe src='https://glot.io/snippets/egqcwhfa7a/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
+<iframe src='https://glot.io/snippets/egqcwhfa7a/embed' frameborder='0'  sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 This can be read in english like, "If `x`, which is 10, is greater than `y`, which is 99, then output the text 'x is greater than y!'. Otherwise, output 'x is not greater than y!'."
 
@@ -372,7 +372,7 @@ We can put everything we've learned today together to create very complex and po
 
 For example, let's say we want to give our `Card` class the ability to be flipped over. We could do this by writing a method that provides this capability. The method could use a conditional expression that checks the class' faceUp property and sets it to the opposite value.
 
-<iframe src='https://glot.io/snippets/egqcycmnl3/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
+<iframe src='https://glot.io/snippets/egqcycmnl3/embed' frameborder='0'  sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 The new `flip()` method uses a conditional expression to see if the card is face up. If it is, it sets the card to be face down. If not, it sets the card to be face up. The method's return type is `void` because the method doesn't return anything, it just changes the state of the object.
 
@@ -380,7 +380,7 @@ We can continue to build our Card class using these features. For example, maybe
 
 With a small change to our main method too, we can demonstrate this feature working:
 
-<iframe src='https://glot.io/snippets/egqczemq0h/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
+<iframe src='https://glot.io/snippets/egqczemq0h/embed' frameborder='0'  sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 When run, this code will output:
 
