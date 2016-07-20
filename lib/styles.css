@@ -3,9 +3,6 @@ iframe{
 	overflow-x: none;
 	overflow-y: scroll;
 	border: 1px solid gray;
-}
-
-iframe:focus{
 	height: 470px;
 }
 
