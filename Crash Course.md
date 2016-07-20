@@ -106,7 +106,9 @@ The `{Class Name}` shown in the example above is a placeholder for an actual cla
 
 The class name should make sense for what you're modeling. For example, if you're modeling a playing card, a logical class name would be `Card`:
 
-<iframe src='https://glot.io/snippets/egqcc75bo4/embed' frameborder='0' scrolling='auto' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
+```java
+class Card{}
+```
 
 This class doesn't actually _do_ or _describe_ anything, but it is 100% valid code.
 
