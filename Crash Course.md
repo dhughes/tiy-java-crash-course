@@ -232,7 +232,7 @@ class Card{
 }
 ```
 
-This example shows a class named `Card` that models a playing card. This class has three properties, `faceUp`, `value`, and `suit`. The default values of these properties are `true`, `"King"`, and `"Spades"` respectively.
+This example shows a class named `Card` that models a playing card. This class has three properties, `faceUp`, `value`, and `suit`. The `faceUp` property is given a default values of `true`. The other two properties are undefined by default.
 
 These properties can be accessed by any code in the `Card` class. And, by default, they can also be read and modified from "outside" the class. 
 
