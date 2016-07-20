@@ -172,7 +172,7 @@ This syntax is used to tell Java that a variable exists, what type of data the v
 
 `=` is the _assignment operator_. An operator is a special bit of syntax that tells Java to perform some action on one, two, or three _operands_. Operands are the data an operator uses. In this case, the assignment operator assigns the value to the right of the operator to the variable specified to the left side.
 
-`{data / value}` is a placeholder indicating a specific value to store in the variable. This value must be of the same type as specified in `{data type}`. 
+`{value}` is a placeholder indicating a specific value to store in the variable. This value must be of the same type as specified in `{data type}`. 
 
 You can also declare a variable without setting its initial value using this syntax:
 
@@ -227,8 +227,8 @@ Class properties are simply variables defined inside a specific class. Here's an
 ```java
 class Card{
 	boolean faceUp = true;
-	String value = "King";
-	String suit = "Spades";
+	String value;
+	String suit;
 }
 ```
 
