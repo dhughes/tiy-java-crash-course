@@ -324,14 +324,7 @@ The `if` keyword indicates that this is a conditional expression. The body of th
 
 Here is a really simple conditional expression:
 
-```
-int x = 99;
-int y = 10;
-
-if(x > y){
-	System.out.println("x is greater than y!");
-}
-```
+<iframe src='https://glot.io/snippets/egqcw1tnpn/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 This example uses `>`, the greater than operator. Java has a number of operators for comparing values:
 
@@ -357,16 +350,7 @@ if({conditional expression}){
 
 Let's update our example above to use `else`:
 
-```
-int x = 10;
-int y = 99;
-
-if(x > y){
-	System.out.println("x is greater than y!");
-} else {
-	System.out.println("x is not greater than y!");
-}
-```
+<iframe src='https://glot.io/snippets/egqcwhfa7a/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 This can be read in english like, "If `x`, which is 10, is greater than `y`, which is 99, then output the text 'x is greater than y!'. Otherwise, output 'x is not greater than y!'."
 
@@ -394,78 +378,22 @@ We can put everything we've learned today together to create very complex and po
 
 For example, let's say we want to give our `Card` class the ability to be flipped over. We could do this by writing a method that provides this capability. The method could use a conditional expression that checks the class' faceUp property and sets it to the opposite value.
 
-```java
-class Card{
-	boolean faceUp = true;
-	String value = "King";
-	String suit = "Spades";
-
-	public String toString(){
-		return value + " of " + suit;
-	}
-	
-	public void flip(){
-	    if(faceUp){
-	        faceUp = false;
-	    } else {
-	        faceUp = true;
-	    }
-	}
-}
-```
+<iframe src='https://glot.io/snippets/egqcycmnl3/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 The new `flip()` method uses a conditional expression to see if the card is face up. If it is, it sets the card to be face down. If not, it sets the card to be face up. The method's return type is `void` because the method doesn't return anything, it just changes the state of the object.
 
-We can continue to build our Card class using these features. For example, maybe we would like our card's description to only show the suit and value when the card is face up. When the card is face down this should be hidden.
+We can continue to build our Card class using these features. For example, maybe we would like our card's description to only show the suit and value when the card is face up. When the card is face down this should be hidden. 
 
-```java
-class Card{
-	boolean faceUp = true;
-	String value = "King";
-	String suit = "Spades";
+With a small change to our main method too, we can demonstrate this feature working:
 
-	public String toString(){
-	    if(faceUp){
-		    return value + " of " + suit;
-	    } else {
-	        return "------";
-	    }
-	}
-	
-	public void flip(){
-	    if(faceUp){
-	        faceUp = false;
-	    } else {
-	        faceUp = true;
-	    }
-	}
-}
-```
-
-With a small change to our main method we can demonstrate this feature working:
-
-```java
-class Main {
-    public static void main(String[] args) {
-        Card myCard = new Card();
-        myCard.value = "Ace";
-        myCard.suit = "Diamonds";
-        
-        System.out.println(myCard);
-        
-        myCard.flip();
-        
-        System.out.println(myCard);
-    }
-}
-```
+<iframe src='https://glot.io/snippets/egqczemq0h/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 When run, this code will output:
 
 > Ace of Diamonds
-> ------
+> - - -
 
-The first line, "Ace of Diamonds", is printed because the card is face up. However, after printing that out we call the `flip()` method. This sets the card to be face down. As such, when we print the card next we only see '------'.
+The first line, "Ace of Diamonds", is printed because the card is face up. However, after printing that out we call the `flip()` method. This sets the card to be face down. As such, when we print the card next we only see '- - -'.
 
 ## Conclusion
 
