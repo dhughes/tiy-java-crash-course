@@ -1,7 +1,7 @@
 iframe{
 	width: 100%;
-	overflow: scroll;
 	overflow-y: scroll;
+	border: 1px solid gray;
 }
 
 iframe:focus{
