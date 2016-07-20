@@ -419,14 +419,14 @@ There are a many fantastic resources for learning Java. Some of my favorites are
 
 **Codeacademy** - Codeacademy is on online, interactive, code school. They have many topics available for many languages. Their Java curriculum is a nice gentle introduction. 
 
-	[https://www.codecademy.com/learn/learn-java](https://www.codecademy.com/learn/learn-java)
+[https://www.codecademy.com/learn/learn-java](https://www.codecademy.com/learn/learn-java)
 
 **Head First Java** - Head First Java is a really great, unintimidating, introduction to the Java programming language. It's an oldie, but still a very valuable introduction to the language.
 
-	ISBN-13: 978-0596009205
-	ISBN-10: 0596009208
+- ISBN-13: 978-0596009205
+- ISBN-10: 0596009208
 
 **The Iron Yard** - The Iron Yard provides an immersive 12 week bootcamp-style coding classes. This is a fantastic way to learn a new skill and kick off a new career.
 
-	[http://theironyard.com](http://theironyard.com)
+[http://theironyard.com](http://theironyard.com)
 
