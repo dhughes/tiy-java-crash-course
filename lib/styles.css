@@ -4,4 +4,6 @@ iframe{
 
 .max-width-2 {
     max-width: 70rem;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
 }
