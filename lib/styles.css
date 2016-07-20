@@ -1,6 +1,8 @@
 iframe{
 	width: 100%;
 	overflow: scroll;
+	overflow-y: scroll;
+	height: 470px;
 }
 
 .border-on-the-side {
