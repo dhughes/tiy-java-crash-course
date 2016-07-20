@@ -2,6 +2,9 @@ iframe{
 	width: 100%;
 	overflow: scroll;
 	overflow-y: scroll;
+}
+
+iframe:focus{
 	height: 470px;
 }
 
