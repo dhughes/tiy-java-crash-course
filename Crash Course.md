@@ -25,10 +25,7 @@ This class is about the programming language Java. Java is just one of _hundreds
 
 To a fresh eye, programming languages often look like gibberish. For example:
 
-```java
-int total = scores.stream().mapToInt(Scoreable::getScore).sum();
-return total / scores.size();
-```
+<iframe src='https://glot.io/snippets/egqarv4w4d/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 This could be translated into english as something like, "Calculate an average score." This example is somewhat obtuse, but only to illustrate a point: _Java isn't english_. 
 
