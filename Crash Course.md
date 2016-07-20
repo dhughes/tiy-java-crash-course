@@ -100,11 +100,13 @@ Our Hello World program is made up of one class, `Main`.
 
 This is the basic syntax used to write a class:
 
-> class {Class Name}{
-> 	// code that describes properties
-> 
-> 	// code that describes capabilities (methods)
-> }
+```
+class {Class Name}{
+	// code that describes properties
+
+	// code that describes capabilities (methods)
+}
+```
 
 The `{Class Name}` shown in the example above is a placeholder for an actual class name. For example, the Hello World program's class is named `Main`. Class names must start with a letter (typically upper case) and can contain letters, numbers, and the underscore character, `_`.
 
