@@ -390,7 +390,7 @@ With a small change to our main method too, we can demonstrate this feature work
 
 When run, this code will output:
 
-> Ace of Diamonds
+> Ace of Diamonds<br />
 > `- - -`
 
 The first line, "Ace of Diamonds", is printed because the card is face up. However, after printing that out we call the `flip()` method. This sets the card to be face down. As such, when we print the card next we only see '- - -'.
