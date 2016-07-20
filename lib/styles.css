@@ -9,3 +9,7 @@ iframe{
     border-left: 1px solid gray;
     border-right: 1px solid gray;
 }
+
+.l-header{
+	background-color: #39474e;
+}
