@@ -1,4 +1,5 @@
 
+
 # Welcome To the Java Crash Course at The Iron Yard!
 
 This lecture can be found at: http://dhughes.github.io/tiy-java-crash-course/
@@ -67,17 +68,11 @@ Let's get started here by writing our first Java program. When learning a new la
 
 Java programmers usually write code in specialized text editors called  Integrated Development Environments (IDEs). An IDE provides a wide range of tools to help programmers write and debug code. However, for the purposes of this class, we'll be using an online tool called [glot.io](https://glot.io/) to write, run, and share our code. 
 
-Go to https://glot.io/new/java to get started. Here you will see a simple interface that will allow you to enter code and run it.
+Go to https://glot.io/new/java to get started. Here you will see a simple interface that will allow you to enter code and run it. You can also use edit and rerun the embedded code below.
 
 The default program on glot.io just so happens to be a Hello World program:
 
-```java
-class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello World");
-    }
-}
-```
+<iframe src='https://glot.io/snippets/egqcav81gh/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 Go ahead and click the run button. You'll see the text "Hello World" output.
 
@@ -99,13 +94,7 @@ The name class comes from classification. This dictionary definition of class ma
 
 All Java code is written in classes. We've already seen an example of a class:
 
-```java
-class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello World");
-    }
-}
-```
+<iframe src='https://glot.io/snippets/egqcav81gh/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 Our Hello World program is made up of one class, `Main`. 
 
@@ -123,9 +112,7 @@ The `{Class Name}` shown in the example above is a placeholder for an actual cla
 
 The class name should make sense for what you're modeling. For example, if you're modeling a playing card, a logical class name would be `Card`:
 
-```java
-class Card{}
-```
+<iframe src='https://glot.io/snippets/egqcc75bo4/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 This class doesn't actually _do_ or _describe_ anything, but it is 100% valid code.
 
@@ -159,13 +146,7 @@ new Card();
 
 You can place this code inside a method like this:
 
-```java
-class Main {
-    public static void main(String[] args) {
-        System.out.println( new Card() );
-    }
-}
-```
+<iframe src='https://glot.io/snippets/egqce8ph9m/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 Here, I've updated our `Main` class' `main` method. Where before it printed out the text "Hello World", it now prints out a description of an instance of `Card`. When run, the output should look something like this:
 
@@ -205,31 +186,7 @@ You can also declare a variable without setting its initial value using this syn
 
 Beyond just declaring a variable, you can later read and/or change a variable's value. For example:
 
-```java
-class Main {
-    public static void main(String[] args) {
-        // set three variables 
-        int x = 0;
-        int y = 123;
-        int z = 321;
-        
-        // read the value of x
-        System.out.println("x is: " + x);
-        
-        // change the value of x
-        x = 25;
-        
-        // output the changed value of x
-        System.out.println("x is now: " + x);
-        
-        // update the value of x by reading the values of y and z and adding them together
-        x = y + z;
-        
-        // output the final value for x
-        System.out.println("x is finally: " + x);
-    }
-}
-```
+<iframe src='https://glot.io/snippets/egqcezgh82/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 ## Types of Data
 
@@ -283,21 +240,7 @@ This example shows a class named `Card` that models a playing card. This class h
 
 These properties can be accessed by any code in the `Card` class. And, by default, they can also be read and modified from "outside" the class. 
 
-```java
-class Main {
-    public static void main(String[] args) {
-		// create an instance of a card and store it in a variable
-		Card myCard = new Card();
-
-		// set two properties of the card
-		myCard.value = "Jack";
-		myCard.suit = "Clubs";
-
-		// print a description of the card
-        System.out.println(myCard);
-    }
-}
-```
+<iframe src='https://glot.io/snippets/egqcfzv0d1/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 This example shows how we can create a new instance of a `Card` using the new keyword. The new `Card` instance is assigned to a variable named `myCard`. We can do this because we declared that `myCard` can hold `Card` data. 
 
@@ -357,17 +300,7 @@ Card@4aa298b7
 
 Developers can optionally provide their own implementation of `toString()`. Perhaps we want to specify our own description of a card? We could do so like this:
 
-```java
-class Card{
-	boolean faceUp = true;
-	String value = "King";
-	String suit = "Spades";
-
-	public String toString(){
-		return value + " of " + suit;
-	}
-}
-```
+<iframe src='https://glot.io/snippets/egqcgo6tmb/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='600' height='400'></iframe>
 
 Here we've declared the `toString()` method as being `public` (globally accessible) and indicated that it will return `String` data. In the body of the method we are using `+` addition operator to build a `String` that describes the current card. We use the `return` keyword to provide this `String` description back to whatever executes the method.
 
